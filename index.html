@@ -687,4 +687,78 @@ function renderKeywords(){
   list.innerHTML=state.keywords.map(k=>`<span class="kw-chip">${escapeHtml(k)}<span class="x" data-kw="${escapeHtml(k)}">×</span></span>`).join(" ");
   list.querySelectorAll(".x").forEach(x=>{
     x.addEventListener("click",()=>{
- 
+      state.keywords=state.keywords.filter(kw=>kw!==x.dataset.kw);
+      renderKeywords();render();
+    });
+  });
+}
+
+function updateHeaderMeta(){
+  const today=cardsToday().length;
+  const month=cardsForMonth(CURRENT_MONTH).length;
+  document.getElementById("header-meta").innerHTML=`${TODAY}<span class="dot"></span>今日新增 ${today} 條<span class="dot"></span>本月累計 ${month} 條`;
+}
+
+function render(){
+  document.querySelectorAll("nav.tabs .tab").forEach(t=>t.classList.toggle("active",t.dataset.tab===state.tab));
+  document.querySelectorAll(".cat-btn").forEach(t=>t.classList.toggle("active",t.dataset.cat===state.category));
+  if(state.tab==="today")renderTodayTab();
+  else if(state.tab==="monthly")renderMonthlyTab();
+  else if(state.tab==="search")renderSearchTab();
+  else if(state.tab==="index")renderIndexTab();
+}
+
+document.addEventListener("click",e=>{
+  const t=e.target.closest("[data-action]");
+  if(t){
+    if(t.dataset.action==="toggle"){
+      const id=t.dataset.id;
+      if(state.expanded.has(id))state.expanded.delete(id);
+      else state.expanded.add(id);
+      render();
+    }else if(t.dataset.action==="copy"){
+      const id=t.dataset.id;
+      const c=allCards().find(x=>x.id===id);
+      if(!c)return;
+      const text=`${c.title_zh}\n${c.title_en}\n${c.doc_number}\n\n[摘要] ${c.summary}\n\n[關鍵變更]\n- ${c.key_changes.join("\n- ")}\n\n[業務影響]\n${c.impact}\n\n[建議行動]\n${c.suggested_action}\n\n${c.original_quote?"[原文引用]\n"+c.original_quote.text+"\n— "+c.original_quote.section+"\n\n":""}[來源]\n${c.sources.map(s=>s.name+" · "+s.url).join("\n")}`;
+      navigator.clipboard.writeText(text).then(()=>showToast("已複製整張卡片內容到剪貼簿"));
+    }
+  }
+});
+
+document.querySelectorAll("nav.tabs .tab").forEach(t=>{
+  t.addEventListener("click",()=>{state.tab=t.dataset.tab;render()});
+});
+document.querySelectorAll(".cat-btn").forEach(t=>{
+  t.addEventListener("click",()=>{state.category=t.dataset.cat;render()});
+});
+document.getElementById("f-high").addEventListener("change",e=>{state.highOnly=e.target.checked;render()});
+document.getElementById("f-soon").addEventListener("change",e=>{state.soonOnly=e.target.checked;render()});
+document.getElementById("f-unverified").addEventListener("change",e=>{state.showUnverified=e.target.checked;render()});
+document.getElementById("kw-add-btn").addEventListener("click",()=>{
+  const v=prompt("新增關鍵字（命中時提高排序）：");
+  if(v&&v.trim()){state.keywords.push(v.trim());renderKeywords();render()}
+});
+document.getElementById("refresh-btn").addEventListener("click",()=>{
+  document.getElementById("refresh-modal").classList.add("show");
+});
+
+function closeModal(){document.getElementById("refresh-modal").classList.remove("show")}
+function copyCmd(){
+  navigator.clipboard.writeText(document.getElementById("refresh-cmd").textContent).then(()=>{
+    showToast("已複製指令，請貼到 Cowork 對話");
+    closeModal();
+  });
+}
+function showToast(msg){
+  const t=document.getElementById("toast");
+  t.textContent=msg;t.classList.add("show");
+  setTimeout(()=>t.classList.remove("show"),2000);
+}
+
+updateHeaderMeta();
+renderKeywords();
+render();
+</script>
+</body>
+</html>
