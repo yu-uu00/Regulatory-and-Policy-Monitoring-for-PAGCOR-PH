@@ -198,6 +198,32 @@ const KEYWORDS_DEFAULT = ["PIGO","DEGL","Gaming Affiliates","AMLC","PAGCOR licen
 const DATA = {
   "2026-06": [
     {
+      id:"20260611-002",date_added:"2026-06-14",month:"2026-06",category:"enforcement",
+      title_zh:"BIR 對 POGO 相關人物 Alice Guo 提起稅務逃漏訴訟，涉嫌隱匿 2019–2023 年所得共 PHP 10 億",
+      title_en:"BIR Files PHP 1.008B Tax Evasion Criminal Case Against POGO-linked Alice Guo; 5-Case Aggregate Deficiency PHP 1.46B",
+      doc_number:"BIR 刑事訴訟（2026-06-11 向 DOJ 提出）；引用 NIRC §254（逃漏稅）及 §255（未申報）",
+      issuing_authority:"BIR（Bureau of Internal Revenue）",doc_type:"Criminal Tax Complaint",
+      summary:"BIR 於 2026-06-11 對前 Bamban 市長 Alice Guo（POGO 相關人物）向 DOJ 提起刑事稅務訴訟，涉嫌 2019–2023 年連續 5 年未申報所得稅，估計稅款缺口（含利息罰款）達 PHP 10.08 億；本案為 BIR 同日提起的 5 宗案件中最大宗，5 案合計稅款缺口 PHP 14.6 億，BIR 採「支出推算法」重建所得。",
+      key_changes:[
+        "BIR 對 Alice Guo 提起 NIRC §254（逃漏稅）及 §255（未申報）兩項刑事控訴，涵蓋 2019-2023 年共 5 個納稅年度",
+        "Guo 個人案件估計稅款缺口（含附加費與利息）超過 PHP 10.08 億（約 USD 1,630 萬），為 5 件案件中最大",
+        "5 件合計稅款缺口超過 PHP 14.6 億（約 USD 2,370 萬），調查背景均源自 2024 年 Bamban POGO 突襲",
+        "BIR 採「支出推算法（expenditure method）」重建所得：依據包括不動產、車輛、直升機、銀行往來及股權持有，顯示 BIR 可以此方法追查未申報所得"
+      ],
+      impact:"對現行 PIGO 業者：直接影響有限，但 BIR 積極運用支出推算法追查未申報所得的執法模式，可能擴及 PIGO 業者關聯人士；BIR 持續清算 POGO 時代遺留稅務問題，展現對博彩相關稅務合規的高度重視；此案確認 BIR 將繼續追查 POGO 相關人士的逃漏稅。",
+      suggested_action:"1. 確認歷史上與 POGO 有業務往來者的稅務申報是否完整  2. 法務評估 BIR「支出推算法」可能適用情境  3. 追蹤後續 DOJ 起訴及法院裁定結果",
+      impact_areas:["taxation","enforcement"],impact_level:"medium",urgency:"historical",
+      effective_date:null,days_to_effective:null,
+      badges:["medium_impact","enforcement"],confidence:"mainstream_media",
+      sources:[
+        {name:"Philippine News Agency（PNA）— BIR files case vs. Alice Guo over P1.46-B tax deficiency（2026-06-11）",url:"https://www.pna.gov.ph/articles/1277106",type:"news"},
+        {name:"AGB — POGO-linked Alice Guo charged over $16.3M estimated tax deficiency（2026-06-11）",url:"https://agbrief.com/news/philippines/11/06/2026/pogo-linked-alice-guo-charged-over-23-7m-estimated-tax-deficiency/",type:"news"},
+        {name:"Manila Times — P1B tax evasion case filed against Alice Guo（2026-06-12）",url:"https://www.manilatimes.net/2026/06/12/news/national/p1b-tax-evasion-case-filed-against-alice-guo/2363865",type:"news"}
+      ],
+      original_quote:{text:"The case involves an estimated income tax deficiency of more than PHP1.008 billion ($16.3 million), inclusive of surcharges and interest. The Guo case is the largest of five criminal tax cases filed by the BIR, which together involve an aggregate estimated tax deficiency of more than PHP1.46 billion ($23.7 million). BIR records showed that Guo failed to file Annual Income Tax Returns for five consecutive years beginning in 2019, despite substantial documented expenditures during the period.",section:"AGB — POGO-linked Alice Guo charged over $16.3M estimated tax deficiency（June 11, 2026）",lang:"en"},
+      keywords_hit:["BIR ruling"],heat_score:53,captured_at:"2026-06-14T09:00:00+08:00"
+    },
+    {
       id:"20260611-001",date_added:"2026-06-13",month:"2026-06",category:"signal",
       title_zh:"Acesite 無限期暫停 Waterfront Manila 重建，2028 前不重啟，管理層點名線上博彩擴張為市場高原期主因",
       title_en:"Acesite Suspends Waterfront Manila Pavilion Hotel & Casino Reconstruction Indefinitely; Restart No Earlier Than 2028 as Manila Gaming Market Faces 'Serious Plateau'",
@@ -745,7 +771,7 @@ const ACTIVE_LAWS = [
     {title_zh:"RA 12312 全面禁止離岸博彩",title_en:"Republic Act 12312 Offshore Gaming Ban",effective_date:"2024-12-31",cited_card:"20260503-001",areas:["enforcement"]}
   ]}
 ];
-const TODAY = "2026-06-13";
+const TODAY = "2026-06-14";
 const CURRENT_MONTH = "2026-06";
 
 const CAT_LABEL = {all:"全部",policy:"政策法規",compliance_list:"合規名單",enforcement:"執法動態",signal:"政府風聲"};
