@@ -219,7 +219,7 @@ const DATA = {
         {name:"AGB — Philippines police target resurgent scam hubs after POGO ban（2026-06-14）",url:"https://agbrief.com/news/philippines/14/06/2026/philippines-police-target-resurgent-scam-hubs-after-pogo-ban/",type:"news"}
       ],
       original_quote:{text:"PNP chief General Jose Melencio Nartatez Jr. said authorities were verifying reports that scam hubs continue to operate in parts of the country through scaled-down networks. He said police had already dismantled a number of hubs but would press on to halt the illegal activity in the interest of public protection and the rule of law. Former House quad committee overall chair Robert Ace Barbers had earlier raised concerns over the continued presence of suspected Pogo-linked groups that reportedly reorganized into less conspicuous operations. Barbers identified Baclaran, Binondo, and Parañaque in Metro Manila, along with Palawan and Cebu, as among the areas where the clandestine activities are allegedly taking place.",section:"AGB — Philippines police target resurgent scam hubs after POGO ban (June 14, 2026)",lang:"en"},
-      keywords_hit:["raid"],heat_score:53,captured_at:"2026-06-15T09:00:00+08:00"
+      keywords_hit:["raid"],heat_score:65,captured_at:"2026-06-15T11:00:00+08:00"
     },
     {
       id:"20260605-001",date_added:"2026-06-15",month:"2026-06",category:"signal",
@@ -297,7 +297,7 @@ const DATA = {
         {name:"Manila Times — P1B tax evasion case filed against Alice Guo（2026-06-12）",url:"https://www.manilatimes.net/2026/06/12/news/national/p1b-tax-evasion-case-filed-against-alice-guo/2363865",type:"news"}
       ],
       original_quote:{text:"The case involves an estimated income tax deficiency of more than PHP1.008 billion ($16.3 million), inclusive of surcharges and interest. The Guo case is the largest of five criminal tax cases filed by the BIR, which together involve an aggregate estimated tax deficiency of more than PHP1.46 billion ($23.7 million). BIR records showed that Guo failed to file Annual Income Tax Returns for five consecutive years beginning in 2019, despite substantial documented expenditures during the period.",section:"AGB — POGO-linked Alice Guo charged over $16.3M estimated tax deficiency（June 11, 2026）",lang:"en"},
-      keywords_hit:["BIR ruling"],heat_score:53,captured_at:"2026-06-14T09:00:00+08:00"
+      keywords_hit:["BIR ruling"],heat_score:62,captured_at:"2026-06-14T09:00:00+08:00"
     },
     {
       id:"20260611-001",date_added:"2026-06-13",month:"2026-06",category:"signal",
@@ -828,7 +828,7 @@ const ACTIVE_LAWS = [
     {title_zh:"PIGO Framework（菲律賓本地線上博彩牌照）",title_en:"PIGO / DEGL Framework",effective_date:"2022 起持續",areas:["licensing"]},
     {title_zh:"B2B Accreditation Framework",title_en:"Mandatory Accreditation for Affiliates & SSPs",effective_date:"2026-01-01",areas:["licensing","advertising"]},
     {title_zh:"DSP 直播串流服務供應商牌照框架（OGLD-RF26002）",title_en:"Accreditation Framework for Data Streaming Providers",effective_date:"2026-04-23",cited_card:"20260423-001",areas:["licensing","cross_border"]},
-    {title_zh:"⚠️ B2B 供應商認證最終截止日（D-46）",title_en:"Final B2B Accreditation Deadline for All Online Suppliers",effective_date:"2026-07-31（截止，逾期設備停用）",cited_card:"20260521-001",areas:["licensing"]}
+    {title_zh:"⚠️ B2B 供應商認證最終截止日（D-46，2026-06-15 計）",title_en:"Final B2B Accreditation Deadline for All Online Suppliers",effective_date:"2026-07-31（截止，逾期設備停用）",cited_card:"20260521-001",areas:["licensing"]}
   ]},
   {group:"稅費與規費",items:[
     {title_zh:"GSA 最低保證費 MGF（首階段，已生效）",title_en:"Minimum Guaranteed Fee for Gaming System Administrators",effective_date:"2026-06-01（已生效）",cited_card:"20260326-001",areas:["taxation","licensing"]}
@@ -837,7 +837,7 @@ const ACTIVE_LAWS = [
     {title_zh:"PAGCOR Cashback / Rebate 上限",title_en:"E-Gaming Cashback & Rebate Caps",effective_date:"2026-05-07",cited_card:"20260507-001",areas:["advertising","taxation"]},
     {title_zh:"BIR RMC 57-2026：賭場彩金預扣稅 20%/25%",title_en:"Casino Jackpot Prizes Subject to Final Withholding Tax",effective_date:"2026-05-28",cited_card:"20260528-001",areas:["taxation"]},
     {title_zh:"PAGCOR 場地變更費 + 廣告事先核准（已生效）",title_en:"PHP 50K Venue Change Processing Fee & Prior Approval for Gambling Ads",effective_date:"2026-05-31",cited_card:"20260526-002",areas:["advertising","licensing"]},
-    {title_zh:"⚠️ PAGCOR-ASC 博彩廣告全面下架（D-61，即將生效）",title_en:"Total Removal of Gambling Advertisements by Aug 15",effective_date:"2026-08-15",cited_card:"20260506-001",areas:["advertising"]}
+    {title_zh:"⚠️ PAGCOR-ASC 博彩廣告全面下架（D-61，2026-06-15 計）",title_en:"Total Removal of Gambling Advertisements by Aug 15",effective_date:"2026-08-15",cited_card:"20260506-001",areas:["advertising"]}
   ]},
   {group:"AML / KYC",items:[
     {title_zh:"AMLC GoTRACS Beneficial Owner Reporting",title_en:"Mandatory BO Disclosure in STR",effective_date:"2026-05-01",cited_card:"20260510-001",areas:["aml","kyc"]},
@@ -849,6 +849,7 @@ const ACTIVE_LAWS = [
 ];
 const TODAY = "2026-06-15";
 const CURRENT_MONTH = "2026-06";
+const LAST_WEEKLY_DIGEST = "2026-06-15"; // 週一深度彙整：2026-06-09 ~ 2026-06-15
 
 const CAT_LABEL = {all:"全部",policy:"政策法規",compliance_list:"合規名單",enforcement:"執法動態",signal:"政府風聲"};
 const CAT_BADGE = {policy:"b-blue",compliance_list:"b-teal",enforcement:"b-pink",signal:"b-gray"};
@@ -1082,7 +1083,8 @@ function updateHeaderMeta(){
   const signalToday=todayAll.filter(c=>c.category==="signal").length;
   const month=cardsForMonth(CURRENT_MONTH).filter(c=>c.category!=="signal"||state.showUnverified).length;
   const hint=signalToday>0&&!state.showUnverified?` <span style="color:var(--text-3);font-size:11px">（另有 ${signalToday} 條風聲，勾選「含未證實風聲」可顯示）</span>`:"";
-  document.getElementById("header-meta").innerHTML=`${TODAY}<span class="dot"></span>今日新增 ${visibleToday} 條${hint}<span class="dot"></span>本月累計 ${month} 條`;
+  const digestBadge=LAST_WEEKLY_DIGEST===TODAY?`<span class="dot"></span><span style="background:var(--green-soft);color:var(--green);font-size:11px;padding:2px 7px;border-radius:20px;font-weight:500">✅ 週報已彙整</span>`:"";
+  document.getElementById("header-meta").innerHTML=`${TODAY}<span class="dot"></span>今日新增 ${visibleToday} 條${hint}<span class="dot"></span>本月累計 ${month} 條${digestBadge}`;
 }
 
 function render(){
