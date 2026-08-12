@@ -198,6 +198,32 @@ const KEYWORDS_DEFAULT = ["PIGO","DEGL","Gaming Affiliates","AMLC","PAGCOR licen
 const DATA = {
   "2026-08": [
     {
+      id:"20260812-001",date_added:"2026-08-12",month:"2026-08",category:"policy",
+      title_zh:"最高法院公布POGO資產民事沒收新規則，免待刑案定讞即可聲請沒收",
+      title_en:"SC Rule on the Civil Forfeiture of POGO-Related Assets (A.M. No. 25-11-29-SC)",
+      doc_number:"A.M. No. 25-11-29-SC",
+      issuing_authority:"Supreme Court of the Philippines",doc_type:"Supreme Court En Banc Resolution / Rule of Procedure",
+      summary:"最高法院發布《POGO相關資產民事沒收規則》，執法機關可不待刑事案件起訴或定讞，逕向法院聲請沒收POGO業者及其服務提供者持有之建物、設備及不法所得，訂於2026年8月24日生效。",
+      key_changes:[
+        "民事沒收程序獨立於刑事案件之外，免除任何刑事起訴、審理中或定讞作為聲請要件",
+        "適用範圍涵蓋POGO業者及其服務提供者持有或控制之建物、設施、器材、相關物料及不法所得",
+        "法院須於受理聲請後24小時內裁定是否具備相當理由（probable cause），具備者得核發保全命令",
+        "設有善意第三人保護機制：不知情之所有權人、善意買受人、擔保債權人得主張返還已扣押資產"
+      ],
+      impact:"本規則僅適用於已被裁定違法之POGO業者及其服務提供者，非現行合法PIGO牌照持有人；但顯示司法與執法機關持續強化POGO善後執法基礎建設，若PIGO業者集團內存在與已停業POGO業者的歷史股權、資產、租賃物業或人員關聯，仍應留意遭波及風險；亦反映政府對博彩產業執法力度不因POGO關閉而鬆懈，可作為評估菲律賓監理環境嚴謹度的參考指標。",
+      suggested_action:"1. 盤點集團內是否有任何資產、租賃物業、設備供應鏈與已停業POGO業者存在歷史關聯  2. 法務確認公司架構與資產取得紀錄是否符合本規則『無辜所有權人』抗辯要件  3. 持續追蹤8月24日生效後首批適用案例，評估執法機關實際執行力度與範圍認定",
+      impact_areas:["enforcement","corporate_structure"],impact_level:"medium",urgency:"effective_soon",
+      effective_date:"2026-08-24",days_to_effective:12,
+      badges:["medium_impact","effective_soon"],confidence:"official",
+      sources:[
+        {name:"Supreme Court of the Philippines — SC Approves Rule on Civil Forfeiture of POGO-Related Assets",url:"https://sc.judiciary.gov.ph/sc-approves-rule-on-civil-forfeiture-of-pogo-related-assets/",type:"primary"},
+        {name:"BusinessWorld — SC adopts rules to forfeit illegal POGO assets（2026-08-09）",url:"https://bworldonline.com/the-nation/2026/08/09/768932/sc-adopts-rules-to-forfeit-illegal-pogo-assets/",type:"news"},
+        {name:"AGB — Philippines enables asset seizures independent of POGO criminal cases（2026-08-11）",url:"https://agbrief.com/news/philippines/11/08/2026/philippines-enables-asset-seizures-independent-of-pogo-criminal-cases/",type:"analysis"}
+      ],
+      original_quote:{text:"No prior criminal charge, pendency or conviction for any prohibited acts under Republic Act No. 12312 is necessary for the commencement or the resolution of a petition for civil forfeiture under this rule.",section:"Rule on the Civil Forfeiture of POGO-Related Assets, A.M. No. 25-11-29-SC (en banc resolution dated April 15, 2026, released August 9, 2026)",lang:"en"},
+      keywords_hit:["Service Provider"],heat_score:93,captured_at:"2026-08-12T09:00:00+08:00"
+    },
+    {
       id:"20260811-001",date_added:"2026-08-11",month:"2026-08",category:"signal",
       title_zh:"PAGCOR官方公告：2026年Q2全產業GGR年減20.3%至881.3億披索，電子博彩重挫37.2%",
       title_en:"PAGCOR: Philippine Gaming Industry GGR Falls 20.3% YoY to PHP88.13bln in 2Q26, Electronic Gaming Down 37.2%",
@@ -1738,7 +1764,7 @@ const ACTIVE_LAWS = [
     {title_zh:"RA 12312 全面禁止離岸博彩",title_en:"Republic Act 12312 Offshore Gaming Ban",effective_date:"2024-12-31",cited_card:"20260503-001",areas:["enforcement"]}
   ]}
 ];
-const TODAY = "2026-08-11";
+const TODAY = "2026-08-12";
 const CURRENT_MONTH = "2026-08";
 const LAST_WEEKLY_DIGEST = "2026-08-10"; // 週一深度彙整：2026-08-04 ~ 2026-08-10（含補收08-03當週B2B延期/SB2347兩案）；新增 眾議員Chan質詢財政部可否調高線上博彩稅彌補個稅減免財源缺口(草案階段口頭提議)、Arden Consult白皮書稱PAGCOR一年監理收緊為「成功重置」、DigiPlus與Okada Manila母公司2Q26財報印證市場緊縮(DigiPlus營收-36.8%轉赴紐西蘭申牌/Okada Manila EBITDA-65%)；重算急迫性：PAGCOR-ASC博彩廣告全面下架 D-12→D-5(2026-08-15生效)、B2B過渡期認證 D-58→D-51(2026-09-30截止)；ACTIVE_LAWS本週無新增生效項目、無下架候選；SB47反線上博彩法案與PAGCOR研究E-Sports監管兩則風聲事實查核後仍未獲官方證實，本週無新進展，維持unverified；已檢視政府網站週末更新、Senate/House動態、AGB/IAG/GGRAsia業界週報，本週無其他重大遺漏項目
 // 2026-08-03 輕量掃描：新增 PAGCOR B2B認證期限延長至9/30、參議員Escudero提案SB 2347博彩廣告全面禁令；ACTIVE_LAWS 已更新B2B截止日與ASC廣告倒數天數
