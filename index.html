@@ -237,7 +237,7 @@ const DATA = {
       impact:"本規則僅適用於已被裁定違法之POGO業者及其服務提供者，非現行合法PIGO牌照持有人；但顯示司法與執法機關持續強化POGO善後執法基礎建設，若PIGO業者集團內存在與已停業POGO業者的歷史股權、資產、租賃物業或人員關聯，仍應留意遭波及風險；亦反映政府對博彩產業執法力度不因POGO關閉而鬆懈，可作為評估菲律賓監理環境嚴謹度的參考指標。",
       suggested_action:"1. 盤點集團內是否有任何資產、租賃物業、設備供應鏈與已停業POGO業者存在歷史關聯  2. 法務確認公司架構與資產取得紀錄是否符合本規則『無辜所有權人』抗辯要件  3. 持續追蹤8月24日生效後首批適用案例，評估執法機關實際執行力度與範圍認定",
       impact_areas:["enforcement","corporate_structure"],impact_level:"medium",urgency:"effective_soon",
-      effective_date:"2026-08-24",days_to_effective:12,
+      effective_date:"2026-08-24",days_to_effective:7,
       badges:["medium_impact","effective_soon"],confidence:"official",
       sources:[
         {name:"Supreme Court of the Philippines — SC Approves Rule on Civil Forfeiture of POGO-Related Assets",url:"https://sc.judiciary.gov.ph/sc-approves-rule-on-civil-forfeiture-of-pogo-related-assets/",type:"primary"},
@@ -363,7 +363,7 @@ const DATA = {
       impact:"對所有向菲律賓PIGO持牌業者供應遊戲內容、金流、KYC、客服或行銷服務的B2B供應商：若尚未取得PAGCOR認證，須把握延長至9月30日的緩衝期完成文件送審、廉正審查、系統檢測與履約保證金繳納，否則9月30日後恐面臨系統斷線、無法繼續向持牌業者供貨；金流商與KYC商等『供給稀薄』類別若有業者退出、出狀況或技術中斷，恐造成市場供應鏈斷點風險。",
       suggested_action:"1. 立即盤點自身或合作供應商是否已完成PAGCOR B2B認證程序，尚未申請者儘速於9月30日前補件  2. 法遵團隊評估文件送審、廉正審查、系統檢測及履約保證金繳納進度  3. 若為持牌營運商，同步稽核所有上游供應商（遊戲、金流、KYC、客服）認證狀態，避免9月30日後供應鏈中斷",
       impact_areas:["licensing","kyc","payments"],impact_level:"high",urgency:"effective_later",
-      effective_date:"2026-09-30",days_to_effective:51,
+      effective_date:"2026-09-30",days_to_effective:44,
       badges:["high_impact"],confidence:"industry_media",
       sources:[
         {name:"iGamingFuture — Philippines PAGCOR Extends B2B Accreditation Deadline（2026-07-31，EXCLUSIVE）",url:"https://igamingfuture.com/philippines-pagcor-extends-b2b-accreditation-deadline/",type:"news"},
@@ -1593,9 +1593,9 @@ const DATA = {
       key_changes:["所有博彩廣告（TV、廣播、線上、戶外）8/15 前完全移除","新廣告創意須經 ASC 預審通過方可發佈","既有戶外看板已先期全國下架","黃金時段 TV/廣播廣告禁令研議擴至全日","適用所有 PAGCOR 持牌業者、平台、聯盟商"],
       impact:"行銷團隊全面重整廣告策略；既有戶外、TV、線上廣告須在 8/15 前完成下架；新廣告須走 ASC 審核流程，預期審核時程拉長；用戶獲取通路被擠壓至 SEO、CRM、聯盟商、口碑等非廣告路徑；對品牌曝光與新客成本造成顯著衝擊。",
       suggested_action:"1. 盤點所有現有廣告位（戶外/TV/線上）並排程 8/15 前下架  2. 行銷預算重配置至非廣告通路（SEO、Affiliates、CRM）  3. 對所有新創意先送 ASC 預審並建立流程 SOP  4. 與 ASC 建立順暢溝通管道，理解審核時程  5. 對既有合約廣告位協調終止條款",
-      impact_areas:["advertising"],impact_level:"high",urgency:"effective_soon",
-      effective_date:"2026-08-15",days_to_effective:5,
-      badges:["high_impact","effective_soon"],confidence:"official",
+      impact_areas:["advertising"],impact_level:"high",urgency:"in_force_new",
+      effective_date:"2026-08-15",days_to_effective:-2,
+      badges:["high_impact","in_force"],confidence:"official",
       sources:[
         {name:"NEXT.io：PAGCOR 強化 iGaming 規範並研議全面禁廣告",url:"https://next.io/news/regulation/pagcor-toughens-igaming-restrictions-considers-ad-ban/",type:"news"},
         {name:"MARKETECH APAC：PAGCOR 與 ASC 簽 MOU、戶外廣告下架",url:"https://marketech-apac.com/pagcor-to-regulate-online-gambling-ads-with-asc-orders-platforms-takedown-of-outdoor-ads/",type:"news"},
@@ -1766,17 +1766,17 @@ const ACTIVE_LAWS = [
     {title_zh:"PIGO Framework（菲律賓本地線上博彩牌照）",title_en:"PIGO / DEGL Framework",effective_date:"2022 起持續",areas:["licensing"]},
     {title_zh:"B2B Accreditation Framework",title_en:"Mandatory Accreditation for Affiliates & SSPs",effective_date:"2026-01-01",areas:["licensing","advertising"]},
     {title_zh:"DSP 直播串流服務供應商牌照框架（OGLD-RF26002）",title_en:"Accreditation Framework for Data Streaming Providers",effective_date:"2026-04-23",cited_card:"20260423-001",areas:["licensing","cross_border"]},
-    {title_zh:"⚠️ B2B 供應商過渡期認證截止日已延長至9月底（D-51，2026-08-10 計）",title_en:"Transitional B2B Accreditation Deadline Extended to Sep 30",effective_date:"2026-09-30（原7/31延長，逾期設備停用）",cited_card:"20260803-001",areas:["licensing"]}
+    {title_zh:"⚠️ B2B 供應商過渡期認證截止日已延長至9月底（D-44，2026-08-17 計）",title_en:"Transitional B2B Accreditation Deadline Extended to Sep 30",effective_date:"2026-09-30（原7/31延長，逾期設備停用）",cited_card:"20260803-001",areas:["licensing"]}
   ]},
   {group:"稅費與規費",items:[
-    {title_zh:"GSA 最低保證費 MGF（首階段，已生效）",title_en:"Minimum Guaranteed Fee for Gaming System Administrators",effective_date:"2026-06-01（已生效）",cited_card:"20260326-001",areas:["taxation","licensing"]}
+    {title_zh:"GSA 最低保證費 MGF（首階段，已生效；PAGCOR 8/12 證實實際生效日為7/1，非原定6/1）",title_en:"Minimum Guaranteed Fee for Gaming System Administrators (Confirmed Effective July 1, Not June 1 as Originally Announced)",effective_date:"2026-07-01（已生效）",cited_card:"20260813-001",areas:["taxation","licensing"]}
   ]},
   {group:"廣告與行銷",items:[
     {title_zh:"PAGCOR Cashback / Rebate 上限",title_en:"E-Gaming Cashback & Rebate Caps",effective_date:"2026-05-07",cited_card:"20260507-001",areas:["advertising","taxation"]},
     {title_zh:"BIR RMC 57-2026：賭場彩金預扣稅 20%/25%",title_en:"Casino Jackpot Prizes Subject to Final Withholding Tax",effective_date:"2026-05-28",cited_card:"20260528-001",areas:["taxation"]},
     {title_zh:"PAGCOR 場地變更費 + 廣告事先核准（已生效）",title_en:"PHP 50K Venue Change Processing Fee & Prior Approval for Gambling Ads",effective_date:"2026-05-31",cited_card:"20260526-002",areas:["advertising","licensing"]},
     {title_zh:"✅ NPGH 廣告素材更換（已完成，須維持至 2026-09-15）",title_en:"OOH Gambling Ads Replaced with NPGH Materials (Must Remain Until Sep 15)",effective_date:"2026-07-15（已生效）",cited_card:"20260617-001",areas:["advertising"]},
-    {title_zh:"⚠️ PAGCOR-ASC 博彩廣告全面下架（D-5，2026-08-10 計）",title_en:"Total Removal of Gambling Advertisements by Aug 15",effective_date:"2026-08-15",cited_card:"20260506-001",areas:["advertising"]}
+    {title_zh:"✅ PAGCOR-ASC 博彩廣告全面下架（已生效，2026-08-15 起）",title_en:"Total Removal of Gambling Advertisements (Effective Aug 15)",effective_date:"2026-08-15（已生效）",cited_card:"20260506-001",areas:["advertising"]}
   ]},
   {group:"AML / KYC",items:[
     {title_zh:"AMLC GoTRACS Beneficial Owner Reporting",title_en:"Mandatory BO Disclosure in STR",effective_date:"2026-05-01",cited_card:"20260510-001",areas:["aml","kyc"]},
@@ -1790,7 +1790,7 @@ const ACTIVE_LAWS = [
 ];
 const TODAY = "2026-08-17";
 const CURRENT_MONTH = "2026-08";
-const LAST_WEEKLY_DIGEST = "2026-08-10"; // 週一深度彙整：2026-08-04 ~ 2026-08-10（含補收08-03當週B2B延期/SB2347兩案）；新增 眾議員Chan質詢財政部可否調高線上博彩稅彌補個稅減免財源缺口(草案階段口頭提議)、Arden Consult白皮書稱PAGCOR一年監理收緊為「成功重置」、DigiPlus與Okada Manila母公司2Q26財報印證市場緊縮(DigiPlus營收-36.8%轉赴紐西蘭申牌/Okada Manila EBITDA-65%)；重算急迫性：PAGCOR-ASC博彩廣告全面下架 D-12→D-5(2026-08-15生效)、B2B過渡期認證 D-58→D-51(2026-09-30截止)；ACTIVE_LAWS本週無新增生效項目、無下架候選；SB47反線上博彩法案與PAGCOR研究E-Sports監管兩則風聲事實查核後仍未獲官方證實，本週無新進展，維持unverified；已檢視政府網站週末更新、Senate/House動態、AGB/IAG/GGRAsia業界週報，本週無其他重大遺漏項目
+const LAST_WEEKLY_DIGEST = "2026-08-17"; // 週一深度彙整：2026-08-11 ~ 2026-08-17；本週由每日掃描已捕捉3張新卡（PAGCOR官方2Q26產業GGR季度數據GGR-20.3%/電子博彩-37.2%、最高法院POGO資產民事沒收新規則A.M.No.25-11-29-SC 8/24生效、PAGCOR證實GSA最低保證費MGF實際生效日為7/1而非原定6/1）；週一深度覆核：搜尋PAGCOR官網、Senate/House動態、AGB/IAG/GGRAsia業界週報、BIR/AMLC等A/B層機關，未發現8/14–8/17期間有其他可驗證之新規；重算急迫性：PAGCOR-ASC博彩廣告全面下架已於8/15生效轉為in_force（D-5→已生效）、SC POGO資產沒收規則D-12→D-7(8/24生效)、B2B過渡期認證D-51→D-44(9/30截止)；ACTIVE_LAWS更正GSA MGF生效日6/1→7/1（依PAGCOR官方書面證實）、廣告全面下架項目狀態更新為已生效、B2B截止日倒數更新，本週無下架候選；SB47反線上博彩法案（近期報導稱已列入參議院優先法案，但來源日期無法確認為本週新進展，暫不升級，維持unverified）與PAGCOR研究E-Sports監管兩則風聲本週查核後仍未獲官方正式確認，維持unverified；PAGCOR「監管與商業分拆」(decoupling)提案仍待GCG向總統府提交建議書，本週無新進展
 // 2026-08-03 輕量掃描：新增 PAGCOR B2B認證期限延長至9/30、參議員Escudero提案SB 2347博彩廣告全面禁令；ACTIVE_LAWS 已更新B2B截止日與ASC廣告倒數天數
 
 const CAT_LABEL = {all:"全部",policy:"政策法規",compliance_list:"合規名單",enforcement:"執法動態",signal:"政府風聲"};
