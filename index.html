@@ -198,6 +198,30 @@ const KEYWORDS_DEFAULT = ["PIGO","DEGL","Gaming Affiliates","AMLC","PAGCOR licen
 const DATA = {
   "2026-09": [
     {
+      id:"20260904-001",date_added:"2026-09-04",month:"2026-09",category:"signal",
+      title_zh:"律師警告：博彩廣告全面禁令恐加重持牌業者責任，卻對離岸平台執法留下缺口",
+      title_en:"Philippine Gambling Ad Ban Bills Widen Domestic Liability But Leave Offshore Enforcement Gap: Lawyers",
+      doc_number:"AGB Deep Dive報導（2026-09-02發布），引述Geronimo Law與Arden Consult法律意見，針對SB 2347與HB 10982之分析",
+      issuing_authority:"Russell Stanley Geronimo（Geronimo Law創辦人）／Marie Antonette \"Tonet\" Quiogue（Arden Consult創辦人）",doc_type:"Industry Legal Analysis / News Deep Dive",
+      summary:"兩位菲律賓博彩法律專家警告，SB 2347與HB 10982全面禁廣提案雖可將責任擴及PAGCOR持牌範圍外之廣告代理商、平台與網紅，但因菲國刑事管轄權屬地限制，對境外平台之執法仍存重大缺口，恐使玩家轉向持續透過簡訊、私訊、聯盟行銷宣傳的非法境外平台。",
+      key_changes:[
+        "Geronimo指出全國性立法可將廣告規範對象擴及PAGCOR持牌範圍外之廣告代理商、平台、發布者與網紅，但無法突破屬地主義下對境外業者的刑事執法限制：「對境外人士的直接刑事執法基本上僅是理論上可行，因菲律賓刑事管轄權具屬地性」",
+        "SB 2347（Escudero，範圍涵蓋所有博彩廣告含實體賭場）與HB 10982（Garcia，僅限線上博彩廣告）為現行審議中之兩案，範圍與既有ASC自律通函（僅約束會員）均無法觸及境外程式化廣告投放、社群媒體與簡訊管道",
+        "Quiogue（Arden Consult）主張，全面禁廣可能推翻近年以降低牌照費、加強KYC、查緝非法網站將玩家導向合法市場的成果，使玩家轉向仍可行銷的境外非法平台；並指出境外執法最有效槓桿為「支付通路阻斷」而非廣告禁令本身",
+        "Geronimo建議責任框架應依「接近程度與知情程度」分級：業者/廣告代理/聯盟商為主要責任人，代言人限於「明知代言內容違規」時負責，平台僅於接獲通知後未處理才負責；下架/封鎖令應由specified機關以書面決定並給予申辯機會"
+      ],
+      impact:"本篇法律分析直接補充本工具已收錄之SB 2347（20260801）與HB 10982（20260903）兩項禁廣法案的實務法律意見，點出「境內加重責任 vs 境外執法真空」之結構性矛盾，可作為評估最終立法版本對持牌業者行銷通路、代言合約與平台責任影響的重要參考；律師提出的分級責任框架（業者/代言人/平台三級）與「支付通路阻斷優於廣告禁令」之論點，亦可能被國會審議時參考採納。",
+      suggested_action:"1. 追蹤SB 2347、HB 10982後續審議是否採納Geronimo提出之分級責任框架（業者/代言人/平台）  2. 法務評估現行KOL代言合約於「明知代言違規」認定標準下之風險缺口  3. 留意律師「支付通路阻斷為境外執法最有效槓桿」之論點，評估對現行/未來境外流量攔截機制之政策意涵",
+      impact_areas:["advertising","enforcement"],impact_level:"medium",urgency:"draft",
+      effective_date:null,days_to_effective:null,
+      badges:["medium_impact","draft"],confidence:"industry_media",
+      sources:[
+        {name:"AGB — Philippine gambling ad ban faces offshore enforcement gap: lawyers（2026-09-02）",url:"https://agbrief.com/intel/deep-dive/02/09/2026/philippine-gambling-ad-ban-faces-offshore-enforcement-gap-lawyers/",type:"news"}
+      ],
+      original_quote:{text:"\"A total ban silences licensed operators while illegal platforms continue promoting through SMS blasts, private messaging, and affiliates,\" Geronimo said. \"That's the tradeoff.\" ... \"Direct penal enforcement against persons outside the territory is largely theoretical, since Philippine criminal jurisdiction is territorial,\" Geronimo said. ... \"Payment interdiction is the most effective lever, because the advertisement is pointless if the Filipino user cannot fund an account,\" Geronimo said. ... 'A prohibition binds only licensed operators; the offshore sites that already advertise illegally to Filipinos keep their channels and inherit the audience,' Quiogue wrote.",section:"AGB — Philippine gambling ad ban faces offshore enforcement gap: lawyers（September 2, 2026）",lang:"en"},
+      keywords_hit:[],heat_score:62,captured_at:"2026-09-04T09:00:00+08:00"
+    },
+    {
       id:"20260903-001",date_added:"2026-09-03",month:"2026-09",category:"policy",
       title_zh:"眾議員Garcia提出HB 10982：擬全面禁止線上博彩廣告、代言與網紅行銷",
       title_en:"Rep. Garcia Files House Bill 10982, the Online Gambling Advertising Prohibition Act of 2026",
@@ -2059,7 +2083,7 @@ const ACTIVE_LAWS = [
     {title_zh:"✅ 最高法院POGO資產民事沒收規則（已生效，2026-08-24 起）",title_en:"SC Rule on the Civil Forfeiture of POGO-Related Assets (A.M. No. 25-11-29-SC, Effective Aug 24)",effective_date:"2026-08-24（已生效）",cited_card:"20260812-001",areas:["enforcement","corporate_structure"]}
   ]}
 ];
-const TODAY = "2026-09-03";
+const TODAY = "2026-09-04";
 const CURRENT_MONTH = "2026-09";
 const LAST_WEEKLY_DIGEST = "2026-08-31"; // 週一深度彙整：2026-08-25 ~ 2026-08-31；本週由每日掃描已捕捉6張新卡（皆源自PAGCOR 2027年度預算聽證會8/24-8/27揭露：PAGCOR全年淨利估重挫91%至16.6億披索8/26、PAGCOR研議年底前推出合法平台辨識App 8/26與8/28重複追蹤合併、PAGCOR對Casino Plus因Ivana Alawi代言活動未經核准開罰100萬披索8/26、PAGCOR重申暫緩新牌照核發且規費30%/25%維持不變、持牌數降至48家8/27、眾議員San Fernando提案要求網紅代言與業者同等連帶責任8/28）；週一深度覆核新增1張卡片：PAGCOR揭露年度總下注額估達3兆披索、眾議員Poe質詢Poppo Live等非法平台仍可存取（8/24同場聽證會但先前掃描漏收，本次補列，20260831-001）；覆核PAGCOR官網/新聞彙整、Senate/House立法動態、AGB/IAG/GGRAsia/BusinessWorld/Manila Bulletin/BusinessMirror業界週報、BIR/AMLC/SEC/BI/DOF/DOJ/DICT-NPC/DOLE/BSP/Supreme Court/PNP-NBI等A+B+C層機關，並針對性查核8/29-8/30週末窗口，除上述補列項目外未發現其他可驗證新規（GGRAsia/AGB本週企業財報類新聞如Int Ent、PhilWeb、Megaworld、DFNN均非政策/合規/執法/風聲類別不予收錄；SB47反線上博彩法案查核結果與上週相同，2025年8月之Senate公聽會報導經核為搜尋引擎年份混淆之舊聞，非本週新進展；DOJ/BIR宏晟科技案後續、9G簽證、GSA/Affiliates認證名單本次掃描均無新增可驗證異動）；重算急迫性：PAGCOR重申暫緩新牌照核發案（8/27生效）D-4仍屬in_force_new；Casino Plus開罰案（8/25）D-6仍屬in_force_new；SC POGO資產沒收規則（8/24生效）滿7天，urgency由in_force_new轉為historical（badge仍保留已生效）；PAGCOR-ASC廣告全面下架案（8/15生效）已逾7天多次未更新，本次一併修正由in_force_new轉為historical；B2B過渡期認證倒數D-37→D-30(9/30截止)，urgency由effective_later升級為effective_soon(≤30天)；ACTIVE_LAWS本週更新B2B倒數天數為D-30，本週無新增現行法規、無下架候選；SB47反線上博彩法案與PAGCOR研究E-Sports監管兩則風聲本週查核後仍未獲官方正式確認，維持unverified；PAGCOR「監管與商業分拆」(decoupling)提案：本週查核仍未見GCG已實際遞交總統府之官方確認，原定8月提交時程已屆月底仍無定論，持續追蹤中
 // [舊] 2026-08-24 週一深度彙整：2026-08-18 ~ 2026-08-24；本週由每日掃描已捕捉3張新卡（Newsbytes.PH業界報告：2025全年GGR達3961.3億披索創新高、電子博彩首度超越實體賭場8/18；BIR對前POGO業者宏晟科技/Zun Yuan Technology提起23.3億披索逃稅刑事告發8/21；Arden Consult法律指南：逾6成PAGCOR認證GSA未達MGF新版最低營收門檻、既有牌照轉讓報價喊至1500萬美元8/21）；週一深度覆核：搜尋PAGCOR官網/新聞彙整、Senate/House立法動態（含8/20 House對PAGCOR/PCSO 2026預算聽證）、AGB/IAG/GGRAsia/Manila Bulletin業界週報、BIR/AMLC/SEC/BI等A/B層機關，並針對性查核8/22-8/23週末窗口，未發現額外可驗證之新規（PAGCOR「casinos secure ISO certification」8/13-14為品質認證非政策變動，且屬技術性一般公告不列入收錄；insiderph「Pagcor shutters 2 unprofitable casinos」與PAGCOR官方decoupling新聞稿經查證實際發布日分別為2025-02-03與2025-09-09，非本週新進展，均排除）；重算急迫性：SC POGO資產民事沒收規則A.M.No.25-11-29-SC已於8/24正式生效，urgency由effective_soon(D-7)轉為in_force_new(已生效)，並新增至ACTIVE_LAWS執法與禁令分類；B2B過渡期認證倒數D-44→D-37(9/30截止，仍在效期內)；ACTIVE_LAWS本週新增1條（SC POGO資產民事沒收規則，已生效）、下架候選0條；SB47反線上博彩法案本週查核確認其仍列於參議院前十大優先法案（多方媒體佐證），但尚無正式委員會表決或三讀排程之新進展，暫不升級，維持unverified；PAGCOR研究E-Sports監管訊號本週無新進展，維持unverified；PAGCOR「監管與商業分拆」(decoupling)提案：多篇報導稱GCG預期於8月向總統府提交建議書，惟本週查核未見GCG已實際遞交之官方確認，暫不視為本週新進展，持續追蹤中
@@ -2070,6 +2094,7 @@ const LAST_WEEKLY_DIGEST = "2026-08-31"; // 週一深度彙整：2026-08-25 ~ 20
 // 2026-09-01 輕量掃描（涵蓋8/31-9/1，跨月首日）：本次無新增卡片，DATA尚未開立2026-09陣列。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC/DOLE/BSP/Senate-House/Supreme Court/PNP-NBI/AGB/GGRAsia/IAG/Inquirer/Rappler/PNA/BusinessWorld/Manila Bulletin等A+B+C層來源；候選項目逐一查證後均排除：PAGCOR「no truth to POGO reopening」防詐警語新聞稿經查證實際發布於2025-02-02，非本期新進展，予以排除；BusinessWorld「PAGCOR developing app to curb access to unregistered platforms」（8/25）與philstar「PAGCOR rules out entry of new e-gaming operators」（8/27）均與既有卡片20260828-002/20260826-002/20260827-001主題重複，不另立卡；SEC受益人揭露規則(HARBOR平台)、BIR RMC 57-2026博彩中獎稅、SB47反線上博彩法案、Escudero SB2347廣告禁令等經查證均為本月稍早已收錄或非本期新進展；PAGCOR decoupling方案、B2B供應商認證9/30倒數等既有追蹤議題本次掃描無新進展；未發現符合收錄條件（具體來源URL+文件編號或可引用原文段落+與既有卡片不重複）之新規、執法行動或可查證風聲
 // 2026-09-02 輕量掃描（涵蓋9/1-9/2）：本次無新增卡片，DATA仍未開立2026-09陣列。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC/DOLE/BSP/Senate-House/Supreme Court/PNP-NBI/AGB/GGRAsia(asgam.com)/Inquirer/Rappler/PNA/BusinessWorld/Manila Bulletin等A+B+C層來源；候選項目逐一查證後均排除：IAG(asgam.com) 8/31報導CiG iDEA Summit為IAG EXPO(9/14-17)活動宣傳非政策/合規/執法類別；PAGCOR B2B供應商9/30認證截止（含逾期10/1起停用系統）為既有ACTIVE_LAWS已收錄之延續追蹤議題，無新進展；BSP e-wallet與線上博彩連結解除令、AMLC Casino Sector Risk Assessment、SC POGO資產沒收規則等既有追蹤議題本次掃描均無新進展；PAGCOR decoupling方案（GCG擬8月遞交總統府建議書）本次掃描仍未見官方正式確認遞交，持續追蹤中；SB47反線上博彩法案、Zubiri全面禁令提案、Gatchalian e-wallet禁令提案等本次查核與既有記錄相符，無新進展；未發現符合收錄條件（具體來源URL+文件編號或可引用原文段落+與既有卡片不重複）之新規、執法行動或可查證風聲
 // 2026-09-03 輕量掃描（涵蓋9/2-9/3，DATA本次開立2026-09陣列）：新增1張卡片（眾議員Karen Hope Garcia 8/26提出HB 10982，擬全面禁止線上博彩廣告、代言與網紅行銷，20260903-001；SunStar 9/1首報、AlienWP 9/2跟進）；掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC/DOLE/BSP/Senate-House/Supreme Court/PNP-NBI/AGB/GGRAsia/IAG(asgam.com)/Inquirer/Rappler/PNA/BusinessWorld/Manila Bulletin等A+B+C層來源；候選項目逐一查證後均排除：IAG(asgam.com) 9/2報導Tengco將於9/15 IAG Academy Summit發表主題演講，屬活動宣傳非政策/合規/執法類別；PAGCOR「amid robust gaming growth...decoupling」新聞稿經查證實際發布於2025-09-09，非本期新進展，予以排除；PAGCOR B2B供應商9/30認證截止、SB 2347/SB47/Zubiri/Gatchalian等既有追蹤法案、decoupling方案GCG遞交總統府進度本次掃描均無新進展；HB10982與既有20260828-002（San Fernando網紅連帶責任提案）主題相關但法案字號、提案人、內容範圍均不同，判定不重複，予以收錄
+// 2026-09-04 輕量掃描（涵蓋9/3-9/4）：新增1張卡片（AGB Deep Dive 9/2報導：律師Geronimo Law/Arden Consult警告博彩廣告禁令加重境內責任卻留下境外執法缺口，20260904-001）；掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC/DOLE/BSP/Senate-House/Supreme Court/PNP-NBI/AGB/GGRAsia/IAG(asgam.com)/Inquirer/Rappler/PNA/BusinessWorld/Manila Bulletin等A+B+C層來源；候選項目逐一查證後均排除：AGB「PAGCOR to resume 5% revenue remittance to PSC」搜尋結果經查證實際發布於2026-02-09（非9月新進展，屬搜尋引擎日期格式DD/MM誤判），且PSC追溯上繳議題已由既有卡片（PAGCOR財測卡）收錄，予以排除；PAGCOR photography contest、IAG EXPO(9/7-10)背書、PAGCOR B2B供應商9/30認證截止、SB 2347/HB10982既有審議進度、decoupling方案GCG遞交總統府進度、BSP e-wallet解除令等既有追蹤議題本次掃描均無新進展；PAGCOR/DOT與Newport World Resorts觀光合作(9/2)屬觀光合作非博彩監理範疇，不予收錄；本次AGB深度報導雖與既有SB2347(20260801)/HB10982(20260903)卡片主題相關，但屬全新法律分析角度（境外執法缺口、分級責任框架），內容、來源、發布日期均不重複，判定收錄
 
 const CAT_LABEL = {all:"全部",policy:"政策法規",compliance_list:"合規名單",enforcement:"執法動態",signal:"政府風聲"};
 const CAT_BADGE = {policy:"b-blue",compliance_list:"b-teal",enforcement:"b-pink",signal:"b-gray"};
