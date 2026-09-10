@@ -198,6 +198,32 @@ const KEYWORDS_DEFAULT = ["PIGO","DEGL","Gaming Affiliates","AMLC","PAGCOR licen
 const DATA = {
   "2026-09": [
     {
+      id:"20260910-001",date_added:"2026-09-10",month:"2026-09",category:"policy",
+      title_zh:"BSP擬凍結新支付執照12個月，博彩業者納入高風險商戶須「直接收單安排」",
+      title_en:"BSP Draft Circular Would Freeze New Payment System Operator Registrations for 12 Months, Classify Gambling Operators as High-Risk Merchants",
+      doc_number:"BSP Draft Circular《Regulations to Strengthen Integrity Controls in Payment Transactions》（政策意見徵詢草案，Governor Eli M. Remolona, Jr.簽署；尚無正式通函編號與生效日，屬修正Manual of Regulations for Payment Systems之草案）",
+      issuing_authority:"BSP（Bangko Sentral ng Pilipinas）— Governor Eli M. Remolona, Jr.",doc_type:"Draft Circular / Policy Exposure Draft",
+      summary:"BSP發布支付系統法規修正草案，擬暫停受理新支付系統營運商(OPS)註冊申請12個月，並將博彩業者、直接經手玩家資金之博彩相關服務商與受監管VASP列為高風險商戶，僅能透過收單機構「直接商戶安排」處理金流，須接受強化盡職調查與交易額度管制。",
+      key_changes:[
+        "自生效日起暫停受理新OPS(支付系統營運商)申請12個月，待BSP完成OPS分類與發照框架之整體檢視，暫停期間送件者仍受理評估但不核准/駁回",
+        "博彩業者、直接經手玩家資金或博彩收益之博彩相關服務商、合法成人產業、受監管VASP、匯兌業者等列為高風險商戶，僅能以「直接商戶安排」onboard，禁止透過支付促進商/聚合商等中介層代收代付",
+        "新設全國QR Code商戶資料庫(National QR Code Merchant Database)，記錄商戶身分、授權與制裁篩查狀態；草案生效後90天內須建立過渡資料庫，12個月內完整上線",
+        "現行透過中介層架構之商戶關係，機構有6個月盤點期+6個月改善期，12個月後仍不合規者將面臨執法行動；重大詐欺/違規/未授權經營事件須於24小時內通報"
+      ],
+      impact:"若草案定案生效，PIGO持牌業者及其收單金流通路可能被迫由現行透過支付促進商/聚合商中介之模式，改為與收單機構「直接商戶安排」，並接受強化盡職調查、交易與結算額度管制及至少每季合規複核；對依賴第三方支付聚合服務簡化收單流程的中小型持牌業者，短期內恐須重新談判銀行/收單機構合作關係、增加合規成本。目前仍為政策意見徵詢草案，尚無生效日與正式通函編號，須留意後續定案版本是否調整博彩業者相關條文。",
+      suggested_action:"1. 財務/法務團隊檢視現行收單與金流合作是否透過中介層(促進商/聚合商)，評估改為直接商戶安排之可行性與成本  2. 持續追蹤BSP草案定案時程、正式通函編號與生效日  3. 留意現行layered arrangement若不合規，6+6個月盤點/改善期之時間表，預先規劃因應方案",
+      impact_areas:["payments","aml","kyc"],impact_level:"high",urgency:"draft",
+      effective_date:null,days_to_effective:null,
+      badges:["high_impact","draft"],confidence:"official",
+      sources:[
+        {name:"BSP — Draft Circular: Regulations to Strengthen Integrity Controls in Payment Transactions（政策意見徵詢草案全文PDF）",url:"https://www.bsp.gov.ph/Regulations/Issuances%20of%20Policy%20Exposure%20Drafts/Draft_Circular-on-Regulations-to-Strengthen-Integrity-Controls-in-Payment-Transaction.pdf",type:"primary"},
+        {name:"Philstar.com — BSP plans pause on new payment system operators（2026-09-07，Keisha Ta-Asan）",url:"https://www.philstar.com/business/2026/09/07/2554437/bsp-plans-pause-new-payment-system-operators",type:"news"},
+        {name:"The Crypto Times — Philippines Groups Crypto Firms With Casinos, Freezes New Payment Licenses for a Year（2026-09-07）",url:"https://www.cryptotimes.io/2026/09/07/philippines-groups-crypto-firms-with-casinos-freezes-new-payment-licenses-for-a-year/",type:"news"}
+      ],
+      original_quote:{text:"A BSI authorized to engage in merchant acquisition shall not process or continue to process a transaction, where the merchant cannot be identified or where the transaction cannot be attributed and reconciled to the same merchant. ... These businesses include casinos and other gambling operators, gaming-related providers directly handling player funds or gaming proceeds, lawful adult-oriented businesses, regulated virtual asset service providers and money service businesses such as remittance companies and money changers. ... \"The suspension is being imposed to facilitate the BSP's holistic review of the OPS taxonomy and licensing framework, including the attendant risk management and regulatory considerations,\" the BSP said.",section:"Philstar.com — BSP plans pause on new payment system operators（September 7, 2026，引用BSP草案原文）",lang:"en"},
+      keywords_hit:[],heat_score:85,captured_at:"2026-09-10T09:00:00+08:00"
+    },
+    {
       id:"20260909-001",date_added:"2026-09-09",month:"2026-09",category:"enforcement",
       title_zh:"菲移民局(BI)突襲文律府住宅，逮捕4名涉電信詐騙中國籍前POGO人員",
       title_en:"BI Arrests Four Chinese Nationals in Anti-POGO Cyber Fraud Raid in Muntinlupa",
@@ -2132,7 +2158,7 @@ const ACTIVE_LAWS = [
     {title_zh:"✅ 最高法院POGO資產民事沒收規則（已生效，2026-08-24 起）",title_en:"SC Rule on the Civil Forfeiture of POGO-Related Assets (A.M. No. 25-11-29-SC, Effective Aug 24)",effective_date:"2026-08-24（已生效）",cited_card:"20260812-001",areas:["enforcement","corporate_structure"]}
   ]}
 ];
-const TODAY = "2026-09-09";
+const TODAY = "2026-09-10";
 const CURRENT_MONTH = "2026-09";
 const LAST_WEEKLY_DIGEST = "2026-09-07"; // 週一深度彙整：2026-08-31 ~ 2026-09-07；本週由每日掃描已捕捉4張新卡（PAGCOR揭露年度博彩總下注額估達3兆披索、眾議員Poe質詢Poppo Live等非法平台仍可存取8/31；眾議員Karen Hope Garcia提出HB 10982擬全面禁止線上博彩廣告代言與網紅行銷9/3；AGB深度報導律師警告博彩廣告禁令加重境內業者責任卻對離岸平台留下執法缺口9/4；PAGCOR重申強化玩家保護措施、24小時問題賭博協助熱線常態化運作9/6）；週一深度覆核：搜尋PAGCOR官網/新聞彙整、Senate/House立法動態、AGB/IAG(asgam.com)/GGRAsia/Manila Times/SunStar/Inquirer/Rappler/PNA/BusinessWorld/Manila Bulletin/Chambers and Partners等業界與主流媒體、BIR/AMLC/SEC/BI/DOF/DOJ/DICT-NPC/DOLE/BSP/Senate-House/Supreme Court/PNP-NBI等A+B+C層機關，並針對性查核9/5-9/7週末窗口；候選項目逐一查證後均排除：Manila Times/SunStar報導所稱「Cayetano參議員提出Online Gambling Control Task Force對案」經查證其引用之SunStar原文實際發布於2025-07-16，內容為2025年既有的Zubiri SB142、Tulfo、Gatchalian、Ejercito、Villanueva/Pia Cayetano、Alan Peter Cayetano等多位議員之既有優先法案彙整報導，非本週新提案或新進展，予以排除；GGRAsia「Pagcor chief eyes e-sports regulation」經查證實際發布於2026-06-02（SiGMA Asia峰會期間），非本期新進展，予以排除；IAG EXPO（asgam.com 9/2、9/5報導Tengco將於9/15演講、CiG iDEA Summit議程）訂於9/14-17舉行，屬活動宣傳非政策/合規/執法/風聲類別，暫不收錄；context.ph 9/5與asgam.com 9/6關於PAGCOR健康福祉發言之報導經查證與既有卡片20260906-001同一事件，不重複收錄；本次掃描未發現AMLC新Advisory、BIR新RMC、SEC受益人揭露新規、BI/POGO遣返新批次、突襲查獲等其他可驗證新規或執法行動；重算急迫性：PAGCOR重申暫緩新牌照核發案（8/27生效）已逾7天（D+11），urgency由in_force_new轉為historical（badge仍保留已生效）；PAGCOR對Casino Plus開罰案（8/25）已逾7天（D+13），urgency由in_force_new轉為historical；B2B過渡期認證倒數D-30→D-23（9/30截止），urgency維持effective_soon（≤30天）；ACTIVE_LAWS本週更新B2B倒數天數為D-23，無新增現行法規、無下架候選；SB47反線上博彩法案本週查核搜尋結果均為2025年舊聞（committee hearing報導發布於2025-07-31），未見本週新委員會表決或排程進展，維持unverified；PAGCOR研議E-Sports監管訊號本週查核（HWONFEX 9/5發言未提及此議題）無新進展，維持unverified；PAGCOR「監管與商業分拆」(decoupling)提案本週查核仍未見GCG已實際遞交總統府之官方確認，持續追蹤中
 // [舊] 2026-08-31 週一深度彙整：2026-08-25 ~ 2026-08-31；本週由每日掃描已捕捉6張新卡（皆源自PAGCOR 2027年度預算聽證會8/24-8/27揭露：PAGCOR全年淨利估重挫91%至16.6億披索8/26、PAGCOR研議年底前推出合法平台辨識App 8/26與8/28重複追蹤合併、PAGCOR對Casino Plus因Ivana Alawi代言活動未經核准開罰100萬披索8/26、PAGCOR重申暫緩新牌照核發且規費30%/25%維持不變、持牌數降至48家8/27、眾議員San Fernando提案要求網紅代言與業者同等連帶責任8/28）；週一深度覆核新增1張卡片：PAGCOR揭露年度總下注額估達3兆披索、眾議員Poe質詢Poppo Live等非法平台仍可存取（8/24同場聽證會但先前掃描漏收，本次補列，20260831-001）；覆核PAGCOR官網/新聞彙整、Senate/House立法動態、AGB/IAG/GGRAsia/BusinessWorld/Manila Bulletin/BusinessMirror業界週報、BIR/AMLC/SEC/BI/DOF/DOJ/DICT-NPC/DOLE/BSP/Supreme Court/PNP-NBI等A+B+C層機關，並針對性查核8/29-8/30週末窗口，除上述補列項目外未發現其他可驗證新規（GGRAsia/AGB本週企業財報類新聞如Int Ent、PhilWeb、Megaworld、DFNN均非政策/合規/執法/風聲類別不予收錄；SB47反線上博彩法案查核結果與上週相同，2025年8月之Senate公聽會報導經核為搜尋引擎年份混淆之舊聞，非本週新進展；DOJ/BIR宏晟科技案後續、9G簽證、GSA/Affiliates認證名單本次掃描均無新增可驗證異動）；重算急迫性：PAGCOR重申暫緩新牌照核發案（8/27生效）D-4仍屬in_force_new；Casino Plus開罰案（8/25）D-6仍屬in_force_new；SC POGO資產沒收規則（8/24生效）滿7天，urgency由in_force_new轉為historical（badge仍保留已生效）；PAGCOR-ASC廣告全面下架案（8/15生效）已逾7天多次未更新，本次一併修正由in_force_new轉為historical；B2B過渡期認證倒數D-37→D-30(9/30截止)，urgency由effective_later升級為effective_soon(≤30天)；ACTIVE_LAWS本週更新B2B倒數天數為D-30，本週無新增現行法規、無下架候選；SB47反線上博彩法案與PAGCOR研究E-Sports監管兩則風聲本週查核後仍未獲官方正式確認，維持unverified；PAGCOR「監管與商業分拆」(decoupling)提案：本週查核仍未見GCG已實際遞交總統府之官方確認，原定8月提交時程已屆月底仍無定論，持續追蹤中
