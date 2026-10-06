@@ -196,6 +196,33 @@ const KEYWORDS_DEFAULT = ["PIGO","DEGL","Gaming Affiliates","AMLC","PAGCOR licen
 
 
 const DATA = {
+  "2026-10": [
+    {
+      id:"20261006-001",date_added:"2026-10-06",month:"2026-10",category:"enforcement",
+      title_zh:"NBI、BI與陸軍聯合突襲三寶顏西布加伊（Zamboanga Sibugay）非法線上賭博據點，逮捕約200人、多為中國籍（raid）",
+      title_en:"NBI, BI and Army Raid Illegal Online Gambling Hubs in Zamboanga Sibugay, About 200 Mostly Chinese Nationals Arrested",
+      doc_number:"無正式文件編號；Philstar(2026-10-02)報導，未載明具體罪名或案號",
+      issuing_authority:"NBI、Bureau of Immigration、陸軍第1步兵師第102旅、PRO9（執法機關聯合行動）",doc_type:"News Report citing Enforcement Action",
+      summary:"Philstar報導，NBI、移民局、陸軍與警方區域辦公室2026-10-02凌晨突襲三寶顏西布加伊省Alicia與Siay兩鎮，查獲以精密電子設備運作的非法線上賭博網絡，逮捕約200人（中國籍及菲籍共犯），並查扣逾200支手機及數十台電腦；官方指被捕者可能涉及人口販運與毒品。報導稱此案與POGO無直接關聯，屬非法線上賭博。",
+      key_changes:[
+        "2026-10-02凌晨於Alicia及Siay兩鎮同步行動，依地方官員與居民通報展開",
+        "逮捕約200人，主要為中國籍，另有菲籍共犯；Philstar原文未載明具體罪名",
+        "查扣逾200支手機、數十台筆電與桌機；他報稱查扣裝置約2,000件，數字未經統一，以Philstar為準",
+        "官方指被捕者可能與人口販運及毒品流通有關"
+      ],
+      impact:"屬非法（未持牌）線上賭博的執法案例，顯示全面禁止POGO後地下據點仍在，且跨部會（NBI/BI/軍方）查緝力道持續。對PIGO持牌業者而言，反映非法市場仍具規模，並可能強化對外籍人員、支付與合作對象的盡職調查要求。本案不涉PAGCOR牌照條文變動。",
+      suggested_action:"1. 持續追蹤是否公布罪名、起訴或涉案業者名單  2. 檢視自身供應商與合作夥伴有無與涉案區域或人員關聯  3. 留意BI/NBI對外籍工作者查核是否擴大",
+      impact_areas:["enforcement","foreign_workers"],impact_level:"medium",urgency:"historical",
+      effective_date:null,days_to_effective:null,
+      badges:["medium_impact","enforcement"],confidence:"mainstream_media",
+      sources:[
+        {name:"Philstar — Chinese, Filipino operators of illegal online gambling hubs busted（2026-10-02）",url:"https://www.philstar.com/nation/2026/10/02/2560498/chinese-filipino-operators-illegal-online-gambling-hubs-busted",type:"news"},
+        {name:"Philstar 社論 — Wala mawala ang POGO（2026-10-03，評論，引述同一事件）",url:"https://www.philstar.com/banat/opinyon/2026/10/03/2560538/editoryal-wala-mawala-ang-pogo",type:"analysis"}
+      ],
+      original_quote:{text:"Clandestine online gambling networks using sophisticated electronic facilities operated in both towns.",section:"Philstar 2026-10-02（依擷取摘要轉述，非逐字確認）",lang:"en"},
+      keywords_hit:["raid"],heat_score:55,captured_at:"2026-10-06T09:40:00+08:00"
+    }
+  ],
   "2026-09": [
     {
       id:"20260923-001",date_added:"2026-09-23",month:"2026-09",category:"policy",
@@ -2354,7 +2381,7 @@ const ACTIVE_LAWS = [
     {title_zh:"✅ 最高法院POGO資產民事沒收規則（已生效，2026-08-24 起）",title_en:"SC Rule on the Civil Forfeiture of POGO-Related Assets (A.M. No. 25-11-29-SC, Effective Aug 24)",effective_date:"2026-08-24（已生效）",cited_card:"20260812-001",areas:["enforcement","corporate_structure"]}
   ]}
 ];
-const TODAY = "2026-10-02";
+const TODAY = "2026-10-06";
 const CURRENT_MONTH = "2026-09";
 // 2026-09-30 輕量掃描（涵蓋9/29-9/30）：本次無新增卡片。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC/DOLE/BSP/Senate-House/Supreme Court/PNP-NBI與AGB/GGRAsia/IAG(asgam.com)/Yogonet等來源；候選項目逐一查證後排除：IAG(asgam.com) 9/29報導Tengco（IAG EXPO訪談系列第四篇）稱希望在其任期（至2028）內推動新線上博彩法，無法案編號或新文件，屬意向表述非新規，比照9/15處理不另立卡；PAGCOR B2B供應商過渡期認證今日（9/30）屆滿，搜尋未見官方再度展延或屆滿後執行細節之具體來源，維持既有卡片與ACTIVE_LAWS；未發現符合收錄條件之新規、執法行動或可查證風聲
 // 2026-09-23 輕量掃描（涵蓋9/22-9/23，補跑上次排程未執行之窗口）：新增2張卡片（IAG(asgam.com) 9/23獨家報導PAGCOR研議強制全菲賭場與IR導入智慧牌桌技術，惟最快延至2027下半年才會發布，20260923-001；Arden Consult COO Samuel Tarng法律意見經IAG 9/20報導，警告BSP支付緊縮草案（既有20260918-001後續）若草率執行「一刀切」排除整個博彩業或限額設計不當，恐把玩家推向非法平台，20260920-001）；掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC/DOLE/CEZA-APECO-AFAB/BSP/PNP-NBI/Senate-House/Supreme Court等A+B+C層來源及AGB/GGRAsia/IAG(asgam.com)/Yogonet/Inquirer/Rappler/PNA/BusinessWorld/Manila Bulletin等業界與主流媒體；候選項目逐一查證後均排除：BusinessWorld 9/21「PAGCOR sets lower minimum profit threshold for 2026」（P4.87B最低淨利目標）因屬PAGCOR自身企業財測目標非產業監理新規，且與既有財測卡片重複，不予收錄；next.io「Long-trailed PAGCOR decoupling may now be imminent」、asgam.com「PAGCOR's Alejandro Tengco says evolution of regulatory framework inevitable」（9/18-21）均為9/15-17 Tengco發言之重複報導，與既有20260916-001/20260917-001重疊，不另立卡；Manila Bulletin「Pagcor shutting door on underperforming online casinos」（9/18）經查證為MGF既有機制重申，核心內容已見於20260326-001/20260813-001等卡片，不予收錄；asgam.com「Solaire sets online gaming target at 20% of group-wide GGR」「Newport World Resorts adds MICHELIN Key」均屬單一業者商業動態非政策/合規/執法/風聲類別；PAGCOR官網headlines「gambling ads replacement with NPGH materials」查核後確認實際發布日為2026-06-17舊聞，非本期新進展；SEC HARBOR受益人揭露平台、BI外籍勞工政策、DOJ/AMLC洗錢查緝、House Bill 10982/SB 2347審議進度、PAGCOR decoupling方案本次掃描均無新增可驗證動態；未發現符合收錄條件之新規、執法行動或可查證風聲；ACTIVE_LAWS本次更新B2B倒數天數與MGF第二階段倒數天數，無新增現行法規、無下架候選
