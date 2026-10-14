@@ -198,6 +198,31 @@ const KEYWORDS_DEFAULT = ["PIGO","DEGL","Gaming Affiliates","AMLC","PAGCOR licen
 const DATA = {
   "2026-10": [
     {
+      id:"20261014-001",date_added:"2026-10-14",month:"2026-10",category:"enforcement",
+      title_zh:"BI突襲奎松市Cubao疑似POGO據點，逮捕76名外籍人士（Anti-POGO Act）",
+      title_en:"BI Arrests 76 Foreigners in Quezon City Raid on Suspected POGO-Linked Scam Hub",
+      doc_number:"BI Mission Order（編號未公開）；依據 RA No. 12312（Anti-POGO Act of 2025）及移民法",
+      issuing_authority:"Bureau of Immigration（BI）／AFP",doc_type:"Enforcement Action",
+      summary:"BI情報處會同軍方於10/12（週一）晚間突襲奎松市Cubao Barangay Socorro一處疑似POGO關聯設施，逮捕76名外籍人士（74名中國籍、2名緬甸籍），稱進入時正從事線上詐騙；將依Anti-POGO Act起訴、驅逐並列黑名單。",
+      key_changes:[
+        "2026-10-12晚間依Mission Order突襲Cubao Barangay Socorro據點，逮捕74名中國籍、2名緬甸籍人士",
+        "BI稱現場人員正從事線上詐騙（online scamming），設施疑與POGO有關",
+        "援引RA 12312（Anti-POGO Act of 2025）與移民法，進入inquest程序、驅逐並列入黑名單",
+        "繼10/2三寶顏西布加244人案（20261006-001）後，兩週內第二起大規模查緝，且回到馬尼拉都會區"
+      ],
+      impact:"對合法PIGO持牌業者無直接牌照影響，但顯示Anti-POGO Act查緝在都會區持續高頻進行；租賃、外包客服、IT／機房等合作夥伴若與無證外籍人員作業場所有關聯，法律與聲譽風險高。",
+      suggested_action:"1. 檢視合作夥伴與外包據點之場地與人員簽證合法性  2. 留意BI是否公布驅逐／黑名單或背後營運主體  3. 與20261006-001合併追蹤2026年查緝累計數字",
+      impact_areas:["enforcement","foreign_workers"],impact_level:"low",urgency:"in_force_new",
+      effective_date:"2026-10-12",days_to_effective:null,
+      badges:["low_impact","enforcement"],confidence:"mainstream_media",
+      sources:[
+        {name:"Philstar — 76 foreigners nabbed in POGO hub raid（2026-10-14）",url:"https://philstar.com/nation/2026/10/14/2563049/76-foreigners-nabbed-pogo-hub-raid",type:"news",fetched_at:"2026-10-14T09:00:00+08:00"},
+        {name:"Daily Tribune — BI Arrests 76 Foreign Nationals in Quezon City Raid on Suspected Scam Hub（2026-10-13）",url:"https://tribune.net.ph/2026/10/13/bi-arrests-76-foreigners-in-quezon-city-scam-hub-raid",type:"news",fetched_at:"2026-10-14T09:00:00+08:00"}
+      ],
+      original_quote:{text:"The operation was conducted in line with President Marcos' directive to end illegal POGOs. ... The apprehended foreigners will face deportation proceedings and will be blacklisted.",section:"Philstar（October 14, 2026，引述BI Commissioner Joel Anthony Viado）",lang:"en"},
+      keywords_hit:["raid"],heat_score:66,captured_at:"2026-10-14T09:00:00+08:00"
+    },
+    {
       id:"20261013-001",date_added:"2026-10-13",month:"2026-10",category:"policy",
       title_zh:"PAGCOR擬出售旗下35家賭場（Casino Filipino）底價200億披索，GCG分拆建議預計10月內送總統府",
       title_en:"PAGCOR Plans P20-Billion Sale of 35 Casinos amid Regulator-Operator Decoupling",
@@ -2433,8 +2458,9 @@ const ACTIVE_LAWS = [
     {title_zh:"✅ 最高法院POGO資產民事沒收規則（已生效，2026-08-24 起）",title_en:"SC Rule on the Civil Forfeiture of POGO-Related Assets (A.M. No. 25-11-29-SC, Effective Aug 24)",effective_date:"2026-08-24（已生效）",cited_card:"20260812-001",areas:["enforcement","corporate_structure"]}
   ]}
 ];
-const TODAY = "2026-10-13";
+const TODAY = "2026-10-14";
 const CURRENT_MONTH = "2026-10";
+// 2026-10-14 輕量掃描（涵蓋10/13-10/14）：新增1張卡片（BI突襲奎松市Cubao疑似POGO據點逮捕76名外籍人士，10/12晚間，Philstar 10/14、Tribune 10/13，20261014-001）。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC/DOLE/BSP/PNP-NBI-CICC/Senate-House/Supreme Court及AGB/GGRAsia/IAG(asgam.com)/Philstar/Tribune/Inquirer/PNA等來源；候選項目查證後排除：Philstar 10/14「PAGCOR targets casino exit by 2027」（目標2027 Q3-Q4完成退出賭場營運）與IAG 10/14「Decoupling high on PAGCOR agenda」（Casino Filipino 2026虧損估70億披索、GGR預估350億披索）均為Tengco於Kaban Boracay開幕同場發言，與既有20261013-001同一事件，不另立卡（2027退出時程為新增細節，供下次追蹤）；IAG所提SC判決PSC 5%上繳已見既有卡片；Manila Times 10/14「BI rounds up 320 foreigners in anti-POGO crackdown」因來源頁面無法讀取（限流），320人是否為10月累計數待確認，不收錄
 // 2026-10-13 輕量掃描（手動測試執行，當日第二次；TODAY已為今日，僅查今日稍晚新動態）：本次無新增卡片。複查PAGCOR/BI/線上博彩相關報導，僅見已收錄之Context.ph賭場出售（20261013-001）與已排除之Philstar自我排除數據，無新可查證來源
 // 2026-10-13 輕量掃描（涵蓋10/12-10/13）：新增1張卡片（PAGCOR擬出售35家賭場底價200億披索、GCG分拆建議預計10月內送總統府，Context.ph 10/13，20261013-001）。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC/DOLE/BSP/PNP-NBI-CICC/Senate-House/Supreme Court及AGB/GGRAsia/IAG(asgam.com)/Inquirer/Philstar/PNA等來源；候選項目查證後排除：Philstar 10/13「近4萬人申請自我排除」為既有玩家保護／自我排除相關卡片之數據更新，無新文件編號，不另立卡；AGB 10/13 Tengco於MAIN十週年談新創投資（10/8活動）無監理內容；BI/NBI 10/2三寶顏西布加突襲後續報導均屬既有卡片20261006-001重複追蹤；未發現新的AMLC/BIR/SEC/BSP博彩相關文件
 // 2026-09-30 輕量掃描（涵蓋9/29-9/30）：本次無新增卡片。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC/DOLE/BSP/Senate-House/Supreme Court/PNP-NBI與AGB/GGRAsia/IAG(asgam.com)/Yogonet等來源；候選項目逐一查證後排除：IAG(asgam.com) 9/29報導Tengco（IAG EXPO訪談系列第四篇）稱希望在其任期（至2028）內推動新線上博彩法，無法案編號或新文件，屬意向表述非新規，比照9/15處理不另立卡；PAGCOR B2B供應商過渡期認證今日（9/30）屆滿，搜尋未見官方再度展延或屆滿後執行細節之具體來源，維持既有卡片與ACTIVE_LAWS；未發現符合收錄條件之新規、執法行動或可查證風聲
