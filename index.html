@@ -198,6 +198,31 @@ const KEYWORDS_DEFAULT = ["PIGO","DEGL","Gaming Affiliates","AMLC","PAGCOR licen
 const DATA = {
   "2026-10": [
     {
+      id:"20261015-001",date_added:"2026-10-15",month:"2026-10",category:"enforcement",
+      title_zh:"傳BSP擬對Coins.ph祭出處分，涉替離岸博彩業者處理金流（恐撤照）",
+      title_en:"Philippine Crypto Platform Coins.ph Reportedly Faces BSP Action over Offshore Gambling Flows",
+      doc_number:"BSP Monetary Board Resolution No. 839（9月下旬部分停權DCPay Philippines，見PPMI Advisory No. 2026-0929-029）；後續處分尚無正式文件",
+      issuing_authority:"Bangko Sentral ng Pilipinas（BSP）",doc_type:"Reported Enforcement Action (BSP not yet confirmed)",
+      summary:"CoinDesk引述知情人士稱BSP正對Coins.ph追究涉與離岸博彩業者交易之違規，情節可能達撤照；BSP已依MB Resolution No. 839部分停權其電子錢包營運商DCPay，InstaPay／PESONet入金與QRPh收款暫停，Coins.ph否認。",
+      key_changes:[
+        "消息人士稱BSP擬對Coins.ph採取懲處行動，所涉違規可能構成撤銷執照（license revocation）事由；BSP未回應",
+        "背景：2025年8月BSP要求受監理機構48小時內移除App內博彩連結後，數家博彩業者轉用Coins.ph，並藉加密貨幣／穩定幣支付離岸合作方",
+        "9月下旬BSP已依MB Resolution No. 839部分暫停DCPay Philippines（Coins.ph披索錢包營運商）支付網路存取：InstaPay、PESONet入金及QRPh收款停擺，出金與加密交易（Betur Inc. VASP牌照）照常",
+        "Coins.ph占菲律賓披索兌穩定幣流動性約75-80%；今年包括法遵長在內多名資深法遵人員離職"
+      ],
+      impact:"博彩金流（尤其透過電子錢包／加密通路之出入金）監理持續收緊，延續BSP支付緊縮草案與8,000個偽裝商戶帳戶關閉之執法路線；使用Coins.ph或類似電子錢包、穩定幣通道收付款之持牌業者與B2B供應商，面臨通路中斷與AML審查風險。",
+      suggested_action:"1. 盤點自身及合作方是否以Coins.ph／DCPay或穩定幣通道處理玩家入出金或離岸結算  2. 準備替代支付通路並確認其BSP牌照與商戶類別合規  3. 追蹤BSP正式處分文件與是否擴及其他EMI／VASP",
+      impact_areas:["payments","aml","enforcement"],impact_level:"medium",urgency:"draft",
+      effective_date:null,days_to_effective:null,
+      badges:["medium_impact","enforcement","unverified"],confidence:"industry_media",
+      sources:[
+        {name:"AGB — Philippine crypto platform Coins.ph reportedly faces BSP action over offshore gambling flows（2026-10-15，引述CoinDesk）",url:"https://agbrief.com/news/philippines/15/10/2026/philippine-crypto-platform-coins-ph-reportedly-faces-bsp-action-over-offshore-gambling-flows/",type:"news",fetched_at:"2026-10-15T09:00:00+08:00"},
+        {name:"crypto.news — Coins.ph users can't add money from banks（2026-10-01，MB Resolution No. 839）",url:"https://crypto.news/coins-ph-users-cant-add-money-from-banks/",type:"news",fetched_at:"2026-10-15T09:00:00+08:00"}
+      ],
+      original_quote:{text:"Coins.ph firmly denies any claim that it knowingly serves offshore gaming or gambling operators, ... Coins.ph said the BSP had directed it to strengthen internal controls.",section:"AGB（October 15, 2026，引述CoinDesk報導及Coins.ph聲明）",lang:"en"},
+      keywords_hit:["revocation"],heat_score:72,captured_at:"2026-10-15T09:00:00+08:00"
+    },
+    {
       id:"20261014-001",date_added:"2026-10-14",month:"2026-10",category:"enforcement",
       title_zh:"BI突襲奎松市Cubao疑似POGO據點，逮捕76名外籍人士（Anti-POGO Act）",
       title_en:"BI Arrests 76 Foreigners in Quezon City Raid on Suspected POGO-Linked Scam Hub",
@@ -2458,8 +2483,9 @@ const ACTIVE_LAWS = [
     {title_zh:"✅ 最高法院POGO資產民事沒收規則（已生效，2026-08-24 起）",title_en:"SC Rule on the Civil Forfeiture of POGO-Related Assets (A.M. No. 25-11-29-SC, Effective Aug 24)",effective_date:"2026-08-24（已生效）",cited_card:"20260812-001",areas:["enforcement","corporate_structure"]}
   ]}
 ];
-const TODAY = "2026-10-14";
+const TODAY = "2026-10-15";
 const CURRENT_MONTH = "2026-10";
+// 2026-10-15 輕量掃描（涵蓋10/14-10/15）：新增1張卡片（傳BSP擬對Coins.ph處分涉離岸博彩金流、恐撤照，DCPay已依MB Resolution No. 839部分停權，AGB 10/15引述CoinDesk，20261015-001）。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC/DOLE/BSP/PNP-NBI-CICC/Senate-House/Supreme Court及AGB/GGRAsia/IAG(asgam.com)/Philstar/Inquirer/PNA/SiGMA等來源；候選項目查證後排除：AGB 10/14「PAGCOR eyes $318M–$477M Casino Filipino sale」與SiGMA「PAGCOR expects October approval for casino exit by late 2027」均為Tengco於Kaban Boracay同場發言，與既有20261013-001重複，不另立卡；Manila Times 10/13社論「Did the POGOs really leave?」屬評論非新動態；Manila Times「BI rounds up 320 foreigners」本次搜尋仍無法取得原文，待確認；未發現新的AMLC/BIR/SEC/BI博彩相關文件
 // 2026-10-14 輕量掃描（涵蓋10/13-10/14）：新增1張卡片（BI突襲奎松市Cubao疑似POGO據點逮捕76名外籍人士，10/12晚間，Philstar 10/14、Tribune 10/13，20261014-001）。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC/DOLE/BSP/PNP-NBI-CICC/Senate-House/Supreme Court及AGB/GGRAsia/IAG(asgam.com)/Philstar/Tribune/Inquirer/PNA等來源；候選項目查證後排除：Philstar 10/14「PAGCOR targets casino exit by 2027」（目標2027 Q3-Q4完成退出賭場營運）與IAG 10/14「Decoupling high on PAGCOR agenda」（Casino Filipino 2026虧損估70億披索、GGR預估350億披索）均為Tengco於Kaban Boracay開幕同場發言，與既有20261013-001同一事件，不另立卡（2027退出時程為新增細節，供下次追蹤）；IAG所提SC判決PSC 5%上繳已見既有卡片；Manila Times 10/14「BI rounds up 320 foreigners in anti-POGO crackdown」因來源頁面無法讀取（限流），320人是否為10月累計數待確認，不收錄
 // 2026-10-13 輕量掃描（手動測試執行，當日第二次；TODAY已為今日，僅查今日稍晚新動態）：本次無新增卡片。複查PAGCOR/BI/線上博彩相關報導，僅見已收錄之Context.ph賭場出售（20261013-001）與已排除之Philstar自我排除數據，無新可查證來源
 // 2026-10-13 輕量掃描（涵蓋10/12-10/13）：新增1張卡片（PAGCOR擬出售35家賭場底價200億披索、GCG分拆建議預計10月內送總統府，Context.ph 10/13，20261013-001）。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC/DOLE/BSP/PNP-NBI-CICC/Senate-House/Supreme Court及AGB/GGRAsia/IAG(asgam.com)/Inquirer/Philstar/PNA等來源；候選項目查證後排除：Philstar 10/13「近4萬人申請自我排除」為既有玩家保護／自我排除相關卡片之數據更新，無新文件編號，不另立卡；AGB 10/13 Tengco於MAIN十週年談新創投資（10/8活動）無監理內容；BI/NBI 10/2三寶顏西布加突襲後續報導均屬既有卡片20261006-001重複追蹤；未發現新的AMLC/BIR/SEC/BSP博彩相關文件
