@@ -198,6 +198,31 @@ const KEYWORDS_DEFAULT = ["PIGO","DEGL","Gaming Affiliates","AMLC","PAGCOR licen
 const DATA = {
   "2026-10": [
     {
+      id:"20261016-001",date_added:"2026-10-16",month:"2026-10",category:"policy",
+      title_zh:"PAGCOR對陸上賭場老虎機設玩家回饋上限（Rebate 1.4%／合計1.5%）",
+      title_en:"PAGCOR Implements Slot Rebate Rules for Licensed Land-Based Casinos (Amended Player Incentive Provisions)",
+      doc_number:"PAGCOR Gaming Licensing and Development Department 通知（2026-10-13發布；董事會2026-10-08核准；文件編號媒體未揭露）",
+      issuing_authority:"PAGCOR",doc_type:"Notice / Amendment to Land-Based Casino Regulatory Manual（Player Incentives）",
+      summary:"PAGCOR修訂陸上賭場規範之玩家獎勵條款，新增老虎機類別：現金回饋上限為投注額1.4%，非現金佣金至多0.2%，兩者合計不得超過1.5%；回饋不得自GGR扣除，公告於官網即生效。",
+      key_changes:[
+        "新增老虎機（slot machines）玩家獎勵規範：總獎勵上限為老虎機投注額（turnover）1.5%，其中現金回饋（cash rebate）上限1.4%",
+        "非現金獎勵佣金（incentive commissions）至多0.2%且須落在1.5%總上限內，不得兌換現金",
+        "玩家獎勵不得列為GGR計算之扣除項，明確延伸至電子遊戲機（EGM）；老虎機以turnover而非net turnover為計算基礎",
+        "桌檯遊戲維持原規：非junket VIP／豪客1.35%（net turnover），junket玩家1.5%；10/8董事會核准、10/13通知，於PAGCOR官網公告即生效"
+      ],
+      impact:"延續2026年5月對線上博彩現金回饋／Cashback設上限之路線，將回饋管控擴及陸上賭場老虎機；持牌整合度假村與賭場須調整老虎機會員回饋、點數與行銷方案，且回饋不得抵減GGR，對以高回饋吸客之業者毛利與牌照費基礎有直接影響；老虎機供應商與聯營（slot participation）合作方之分潤模型亦可能受波及。",
+      suggested_action:"1. 盤點現行老虎機會員回饋、現金返還與非現金佣金比例是否超過1.4%／1.5%  2. 財會確認GGR計算不再扣除玩家獎勵，評估對牌照費與分潤之影響  3. 取得PAGCOR官網正式通知原文與文件編號，確認是否有過渡期",
+      impact_areas:["licensing","taxation","advertising"],impact_level:"medium",urgency:"in_force_new",
+      effective_date:"2026-10-13",days_to_effective:-3,
+      badges:["medium_impact","in_force"],confidence:"industry_media",
+      sources:[
+        {name:"AGB — PAGCOR implements slot rebate rules for licensed land-based casinos（2026-10-14）",url:"https://agbrief.com/news/philippines/14/10/2026/pagcor-implements-slot-rebate-rules-for-licensed-land-based-casinos/",type:"news",fetched_at:"2026-10-16T09:00:00+08:00"},
+        {name:"World Casino News — PAGCOR Sets New Slot Machine Incentive Limits in Casinos（2026-10-15）",url:"https://news.worldcasinodirectory.com/pagcor-introduces-new-slot-machine-incentive-limits-124712",type:"news",fetched_at:"2026-10-16T09:00:00+08:00"}
+      ],
+      original_quote:{text:"[Player incentives] shall not be included as a deduction in the computation of gross gaming revenues. ... Incentive commissions cannot be redeemed for cash. ... The changes took effect immediately upon publication on PAGCOR's official website.",section:"AGB（October 14, 2026）引述PAGCOR通知；World Casino News（October 15, 2026）",lang:"en"},
+      keywords_hit:[],heat_score:83,captured_at:"2026-10-16T09:00:00+08:00"
+    },
+    {
       id:"20261015-001",date_added:"2026-10-15",month:"2026-10",category:"enforcement",
       title_zh:"傳BSP擬對Coins.ph祭出處分，涉替離岸博彩業者處理金流（恐撤照）",
       title_en:"Philippine Crypto Platform Coins.ph Reportedly Faces BSP Action over Offshore Gambling Flows",
@@ -2483,8 +2508,9 @@ const ACTIVE_LAWS = [
     {title_zh:"✅ 最高法院POGO資產民事沒收規則（已生效，2026-08-24 起）",title_en:"SC Rule on the Civil Forfeiture of POGO-Related Assets (A.M. No. 25-11-29-SC, Effective Aug 24)",effective_date:"2026-08-24（已生效）",cited_card:"20260812-001",areas:["enforcement","corporate_structure"]}
   ]}
 ];
-const TODAY = "2026-10-15";
+const TODAY = "2026-10-16";
 const CURRENT_MONTH = "2026-10";
+// 2026-10-16 輕量掃描（涵蓋10/15-10/16）：新增1張卡片（PAGCOR對陸上賭場老虎機設玩家回饋上限：現金回饋1.4%、非現金佣金0.2%、合計1.5%，不得自GGR扣除，10/8董事會核准、10/13通知即生效，AGB 10/14、World Casino News 10/15，20261016-001；10/14、10/15掃描漏收，本次補收）。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC/DOLE/BSP/PNP-NBI-CICC/Senate-House/Supreme Court及AGB/GGRAsia/IAG(asgam.com)/Philstar/Inquirer/Manila Bulletin/PNA/Context.ph等來源；候選項目查證後排除：Context.ph 10/14「PAGCOR profit seen plunging below P5 billion」、Manila Bulletin 10/13 Casino Filipino虧損與民營化報導均屬財務／既有分拆議題（20261013-001）更新，不另立卡；AGB 10/15 DigiPlus退出紐西蘭線上賭場競標、10/14 Okada Manila 3Q財報、PH Resorts股價說明屬企業新聞非法規動態；GGRAsia 10/14-10/16無菲律賓法規新聞；未發現新的AMLC/BIR/SEC/BI博彩相關文件；PAGCOR官網老虎機回饋通知原文本次未取得，文件編號待確認
 // 2026-10-15 輕量掃描（涵蓋10/14-10/15）：新增1張卡片（傳BSP擬對Coins.ph處分涉離岸博彩金流、恐撤照，DCPay已依MB Resolution No. 839部分停權，AGB 10/15引述CoinDesk，20261015-001）。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC/DOLE/BSP/PNP-NBI-CICC/Senate-House/Supreme Court及AGB/GGRAsia/IAG(asgam.com)/Philstar/Inquirer/PNA/SiGMA等來源；候選項目查證後排除：AGB 10/14「PAGCOR eyes $318M–$477M Casino Filipino sale」與SiGMA「PAGCOR expects October approval for casino exit by late 2027」均為Tengco於Kaban Boracay同場發言，與既有20261013-001重複，不另立卡；Manila Times 10/13社論「Did the POGOs really leave?」屬評論非新動態；Manila Times「BI rounds up 320 foreigners」本次搜尋仍無法取得原文，待確認；未發現新的AMLC/BIR/SEC/BI博彩相關文件
 // 2026-10-14 輕量掃描（涵蓋10/13-10/14）：新增1張卡片（BI突襲奎松市Cubao疑似POGO據點逮捕76名外籍人士，10/12晚間，Philstar 10/14、Tribune 10/13，20261014-001）。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC/DOLE/BSP/PNP-NBI-CICC/Senate-House/Supreme Court及AGB/GGRAsia/IAG(asgam.com)/Philstar/Tribune/Inquirer/PNA等來源；候選項目查證後排除：Philstar 10/14「PAGCOR targets casino exit by 2027」（目標2027 Q3-Q4完成退出賭場營運）與IAG 10/14「Decoupling high on PAGCOR agenda」（Casino Filipino 2026虧損估70億披索、GGR預估350億披索）均為Tengco於Kaban Boracay開幕同場發言，與既有20261013-001同一事件，不另立卡（2027退出時程為新增細節，供下次追蹤）；IAG所提SC判決PSC 5%上繳已見既有卡片；Manila Times 10/14「BI rounds up 320 foreigners in anti-POGO crackdown」因來源頁面無法讀取（限流），320人是否為10月累計數待確認，不收錄
 // 2026-10-13 輕量掃描（手動測試執行，當日第二次；TODAY已為今日，僅查今日稍晚新動態）：本次無新增卡片。複查PAGCOR/BI/線上博彩相關報導，僅見已收錄之Context.ph賭場出售（20261013-001）與已排除之Philstar自我排除數據，無新可查證來源
