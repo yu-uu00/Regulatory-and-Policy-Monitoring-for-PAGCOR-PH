@@ -198,6 +198,31 @@ const KEYWORDS_DEFAULT = ["PIGO","DEGL","Gaming Affiliates","AMLC","PAGCOR licen
 const DATA = {
   "2026-10": [
     {
+      id:"20261023-001",date_added:"2026-10-23",month:"2026-10",category:"enforcement",
+      title_zh:"PNP轉向情資導向小規模查緝，鎖定馬尼拉3處住宅型POGO微型據點（micro scam hubs）",
+      title_en:"PNP Recalibrates Operations vs Scam Hubs: Shift from Broad-Scale Raids to Intelligence-Driven Operations against POGO 'Micro Hubs'",
+      doc_number:"PNP Chief Statement（Gen. Jose Melencio Nartatez Jr., 2026-10-22；無文件編號）",
+      issuing_authority:"Philippine National Police（PNP）／DILG",doc_type:"Law Enforcement Statement / Press Report",
+      summary:"PNP宣布由大規模突襲轉向以網路監控、高頻寬用量追蹤及社區監測為主的情資導向行動；DILG部長Remulla指馬尼拉大都會仍有3處活躍微型詐騙據點，每處以租屋經營、10–20名員工。",
+      key_changes:[
+        "查緝策略由『broad-scale raids』轉為『surgical, intelligence-driven operations』，新增高頻寬用量追蹤與社區層級監測等手段",
+        "DILG部長Remulla指認馬尼拉大都會3處活躍微型據點，皆設於住宅、每處10–20人，取代過去大型園區模式",
+        "PNP重申現職或已免職警員若掩護相關業者將被起訴",
+        "延續6月PNP『游擊式網絡』警示（20260614-001）及10月三寶顏西布加、Cubao、馬卡蒂Bel-Air查緝（20261006-001、20261014-001、20261018-001）"
+      ],
+      impact:"對合法PIGO持牌業者無直接牌照影響；但以頻寬用量與社區監測鎖定住宅型據點，意味租屋、IT／網路服務與小型外包據點更易被列為可疑對象，合作夥伴盡職調查與營運地點合規文件的重要性上升。",
+      suggested_action:"1. 確認在菲營運及外包團隊之辦公地點、租約與PAGCOR登記資料一致  2. 檢視網路／IDC供應商與租屋合作方是否涉前POGO實體  3. 追蹤PNP後續是否發布具體作業指令或查緝成果",
+      impact_areas:["enforcement","foreign_workers"],impact_level:"low",urgency:"in_force_new",
+      effective_date:"2026-10-22（策略調整即時實施）",days_to_effective:null,
+      badges:["low_impact","enforcement","in_force"],confidence:"mainstream_media",
+      sources:[
+        {name:"SunStar — PNP recalibrates operations vs scam hubs（2026-10-22）",url:"https://www.sunstar.com.ph/manila/pnp-recalibrates-operations-vs-scam-hubs",type:"news",fetched_at:"2026-10-23T09:00:00+08:00"},
+        {name:"Daily Tribune — PNP intensifies micro-scam hubs' dismantling（2026-10-23）",url:"https://tribune.net.ph/2026/10/22/pnp-intensifies-micro-scam-hubs-dismantling",type:"news",fetched_at:"2026-10-23T09:00:00+08:00"}
+      ],
+      original_quote:{text:"“We are recalibrating our police strategy from broad-scale raids to surgical, intelligence-driven operations utilizing cyber-surveillance, high-bandwidth usage tracking, and community-level monitoring.” ... “While the total ban on Pogos neutralized massive compounds, these micro hubs represent desperate attempts to evade detection.”",section:"PNP Chief Gen. Jose Melencio Nartatez Jr.（SunStar／Daily Tribune, October 22, 2026）",lang:"en"},
+      keywords_hit:["raid"],heat_score:50,captured_at:"2026-10-23T09:00:00+08:00"
+    },
+    {
       id:"20261020-001",date_added:"2026-10-20",month:"2026-10",category:"policy",
       title_zh:"PAGCOR董事會核准合法平台辨識App，委由DBP Data Center開發、目標12月上線",
       title_en:"PAGCOR Targets December Launch for App to Verify Licensed Gaming Sites (Board-Approved Partnership with DBP Data Center Inc.)",
@@ -2567,8 +2592,9 @@ const ACTIVE_LAWS = [
     {title_zh:"✅ 最高法院POGO資產民事沒收規則（已生效，2026-08-24 起）",title_en:"SC Rule on the Civil Forfeiture of POGO-Related Assets (A.M. No. 25-11-29-SC, Effective Aug 24)",effective_date:"2026-08-24（已生效）",cited_card:"20260812-001",areas:["enforcement","corporate_structure"]}
   ]}
 ];
-const TODAY = "2026-10-22";
+const TODAY = "2026-10-23";
 const CURRENT_MONTH = "2026-10";
+// 2026-10-23 輕量掃描（涵蓋10/22-10/23）：新增1張卡片（PNP轉向情資導向查緝、DILG指馬尼拉3處住宅型POGO微型據點，SunStar 10/22／Daily Tribune 10/23，20261023-001）。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC/DOLE/BSP/PNP-NBI-PAOCC-CICC/Senate-House/Supreme Court及AGB/GGRAsia/IAG(asgam.com)/Inquirer/Philstar/Manila Bulletin/BusinessWorld/BusinessMirror/PNA/Yogonet等來源；候選項目查證後排除：Inquirer Biz Buzz 10/23、Yogonet 10/21合法平台辨識App報導屬既有20261020-001；Daily Tribune 10/21 Newport World Resorts基金會捐P678M予PNP設施屬企業新聞；GGRAsia「regulatory framework must evolve」為9/18舊聞；BI/NBI 10/12-14突襲與遣返屬既有卡片；GGRAsia/AGB/IAG列表頁本次無法直接讀取（未授權抓取），僅經搜尋結果覆蓋；未發現新的AMLC/BIR/SEC/BI博彩相關文件
 // 2026-10-22 輕量掃描（涵蓋10/21-10/22）：本次無新增卡片。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC/DOLE/BSP/PNP-NBI-CICC/Senate-House/Supreme Court及AGB/GGRAsia/IAG(asgam.com)/Inquirer/Philstar/Manila Times/BusinessWorld/BusinessMirror/PNA/Yogonet等來源；候選項目查證後排除：Yogonet 10/21、BusinessWorld 10/19、BusinessMirror 10/19-20等合法平台辨識App報導均屬既有20261020-001；GGRAsia 10/21 PAGCOR捐贈16輛病患運送車屬企業社會責任新聞；IAG 10/21 Hann Reserve Junior PGA賽事屬企業新聞；Coins.ph／DCPay相關報導（PPMI Advisory No. 2026-0929-029、MB Resolution No. 839）均為10/14-15內容，屬既有20261015-001；PNA「Pagcor imposes stricter online gambling regulations」頁面無法讀取、經查為2026年2月舊聞；BI/NBI/CIDG本期未見新POGO突襲；AGB菲律賓頁面快取僅更新至10/7、RSS受robots限制
 // 2026-10-21 輕量掃描（涵蓋10/20-10/21）：本次無新增卡片。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC/DOLE/BSP/PNP-NBI-CICC/Senate-House/Supreme Court及AGB/GGRAsia/IAG(asgam.com)/Inquirer/Philstar/Manila Times/BusinessWorld/BusinessMirror/PNA等來源；候選項目查證後排除：GGRAsia 10/20、BusinessMirror 10/20、Manila Times 10/20、BusinessWorld 10/19、Journal News等PAGCOR合法平台辨識App 12月上線報導均屬既有20261020-001；GGRAsia 10/16 Interblock「Battle for Earth」獲PAGCOR產品核准屬廠商產品新聞、非法規；IAG 10/21 Hann Reserve高爾夫賽事、AGB/IAG 10/19 PAGCOR捐贈救護車、PhilWeb旗下JKS Tech與MegaWin合作屬企業新聞；BI 10/14「320名外籍人士」、NBI 10/12遣返101人為掃描範圍前之既有執法動態；e-sabong相關搜尋結果均為2025/2026年2月舊聞
 // 2026-10-20 輕量掃描（涵蓋10/19-10/20）：新增1張卡片（PAGCOR董事會10/8核准合法平台辨識App、與DBP Data Center Inc.合作五年、目標12月上線，AGB/iGaming Expert 10/19、Manila Times 10/20，20261020-001）。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC/DOLE/BSP/PNP-NBI-CICC/Senate-House/Supreme Court及AGB/GGRAsia/IAG(asgam.com)/Inquirer/Manila Times/BusinessMirror/PNA等來源；候選項目查證後排除：Manila Bulletin/DZRH 10/18馬卡蒂POGO突襲屬既有20261018-001；Philstar 10/14 casino exit by 2027屬既有20261013-001；BusinessMirror 10/19 App報導（robots限制無法讀取）與本次新卡同一事件；未發現新的AMLC/BIR/SEC/BI博彩相關文件或執法行動
