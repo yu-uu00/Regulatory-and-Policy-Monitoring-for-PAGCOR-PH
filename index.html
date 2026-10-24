@@ -198,6 +198,30 @@ const KEYWORDS_DEFAULT = ["PIGO","DEGL","Gaming Affiliates","AMLC","PAGCOR licen
 const DATA = {
   "2026-10": [
     {
+      id:"20261024-001",date_added:"2026-10-24",month:"2026-10",category:"enforcement",
+      title_zh:"NBI突襲蘇比克自由港詐騙據點，逮捕232名越南籍人士，涉線上博彩詐騙（raid、AFASA）",
+      title_en:"232 Vietnamese Arrested for Online Scam in Subic Freeport — NBI Raid on UPower Building 2, Subic Gateway Park",
+      doc_number:"RTC Olongapo Br. 73 WSSECD（2026-10-21）；RA 12010（AFASA）§4(b)、4(c)、5(a) in relation to RA 10175",
+      issuing_authority:"National Bureau of Investigation（NBI-PAMDO／NBI-OLDO）",doc_type:"Law Enforcement Operation / Press Report",
+      summary:"NBI會同空軍、PNP、SBMA及AMLC、BI於10/22持網路數據搜索令突襲蘇比克自由港Subic Gateway Park大樓，逮捕232名越南籍人士，涉嫌金融帳戶詐騙及線上博彩詐騙等網路犯罪。",
+      key_changes:[
+        "執法地點延伸至經濟特區／自由港（SBMA轄區），非傳統POGO園區",
+        "依據為AFASA（RA 12010）與Cybercrime Prevention Act，而非Anti-POGO Act；AMLC、BI、IACAT共同參與",
+        "查獲對象以越南籍為主，與近期馬尼拉住宅型微型據點（20261023-001）同屬「後POGO時代」詐騙據點型態"
+      ],
+      impact:"對合法PIGO持牌業者無直接牌照影響；但顯示自由港／經濟特區內的IT、BPO型租戶正成為查緝重點，AMLC同步介入意味相關金流帳戶可能遭凍結追查，在特區設點的服務商與支付合作方須留意盡職調查。",
+      suggested_action:"1. 檢視在SBMA、Clark等特區之外包或技術合作夥伴背景  2. 留意AMLC是否後續發布凍結令或相關帳戶名單  3. 追蹤BI對232名越南人之遣返與黑名單處置",
+      impact_areas:["enforcement","foreign_workers","aml"],impact_level:"low",urgency:"in_force_new",
+      effective_date:"2026-10-22（行動日）",days_to_effective:null,
+      badges:["low_impact","enforcement","in_force"],confidence:"mainstream_media",
+      sources:[
+        {name:"Daily Tribune — 232 Vietnamese arrested for online scam in Subic Freeport（2026-10-23）",url:"https://tribune.net.ph/2026/10/23/232-vietnamese-arrested-for-online-scam-in-subic-freeport",type:"news",fetched_at:"2026-10-24T09:00:00+08:00"},
+        {name:"Daily Tribune — NBI raids Subic scam hub, over 200 Vietnamese detained（2026-10-24）",url:"https://tribune.net.ph/2026/10/23/nbi-raids-subic-scam-hub-over-200-vietnamese-detained",type:"news",fetched_at:"2026-10-24T09:00:00+08:00"}
+      ],
+      original_quote:{text:"“Some 232 Vietnamese nationals were arrested during a law enforcement operation against online financial scamming ... alleged online gambling fraud, and other large-scale cyber-enabled fraudulent activities.” ... “We are working overtime in our fight against scam hubs and transnational online fraud.” — NBI Director Melvin Matibag",section:"Daily Tribune, October 23–24, 2026（WSSECD issued by RTC Br. 73, Olongapo City; alleged violations of Sections 4(b), 4(c) and 5(a) of RA 12010）",lang:"en"},
+      keywords_hit:["raid","AMLC"],heat_score:54,captured_at:"2026-10-24T09:00:00+08:00"
+    },
+    {
       id:"20261023-001",date_added:"2026-10-23",month:"2026-10",category:"enforcement",
       title_zh:"PNP轉向情資導向小規模查緝，鎖定馬尼拉3處住宅型POGO微型據點（micro scam hubs）",
       title_en:"PNP Recalibrates Operations vs Scam Hubs: Shift from Broad-Scale Raids to Intelligence-Driven Operations against POGO 'Micro Hubs'",
@@ -2592,8 +2616,9 @@ const ACTIVE_LAWS = [
     {title_zh:"✅ 最高法院POGO資產民事沒收規則（已生效，2026-08-24 起）",title_en:"SC Rule on the Civil Forfeiture of POGO-Related Assets (A.M. No. 25-11-29-SC, Effective Aug 24)",effective_date:"2026-08-24（已生效）",cited_card:"20260812-001",areas:["enforcement","corporate_structure"]}
   ]}
 ];
-const TODAY = "2026-10-23";
+const TODAY = "2026-10-24";
 const CURRENT_MONTH = "2026-10";
+// 2026-10-24 輕量掃描（涵蓋10/23-10/24）：新增1張卡片（NBI突襲蘇比克自由港詐騙據點逮捕232名越南人、涉線上博彩詐騙，Daily Tribune 10/23-24，20261024-001）。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC/DOLE/BSP/PNP-NBI-CICC/Senate-House/Supreme Court及AGB/GGRAsia/IAG(asgam.com)/Inquirer/Philstar/Manila Times/BusinessMirror/PNA等來源；候選項目查證後排除：GGRAsia「GGR could fall 19pct」為6/4舊聞、「Pagcor sticks to oversight not ops」為2022舊聞；DZRH Cavite 29名POGO員工遣返為2025-01舊聞；PAGCOR退出賭場經營／合法平台辨識App相關報導屬既有卡片；未發現新的AMLC/BIR/SEC/BI/BSP博彩相關文件
 // 2026-10-23 輕量掃描（涵蓋10/22-10/23）：新增1張卡片（PNP轉向情資導向查緝、DILG指馬尼拉3處住宅型POGO微型據點，SunStar 10/22／Daily Tribune 10/23，20261023-001）。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC/DOLE/BSP/PNP-NBI-PAOCC-CICC/Senate-House/Supreme Court及AGB/GGRAsia/IAG(asgam.com)/Inquirer/Philstar/Manila Bulletin/BusinessWorld/BusinessMirror/PNA/Yogonet等來源；候選項目查證後排除：Inquirer Biz Buzz 10/23、Yogonet 10/21合法平台辨識App報導屬既有20261020-001；Daily Tribune 10/21 Newport World Resorts基金會捐P678M予PNP設施屬企業新聞；GGRAsia「regulatory framework must evolve」為9/18舊聞；BI/NBI 10/12-14突襲與遣返屬既有卡片；GGRAsia/AGB/IAG列表頁本次無法直接讀取（未授權抓取），僅經搜尋結果覆蓋；未發現新的AMLC/BIR/SEC/BI博彩相關文件
 // 2026-10-22 輕量掃描（涵蓋10/21-10/22）：本次無新增卡片。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC/DOLE/BSP/PNP-NBI-CICC/Senate-House/Supreme Court及AGB/GGRAsia/IAG(asgam.com)/Inquirer/Philstar/Manila Times/BusinessWorld/BusinessMirror/PNA/Yogonet等來源；候選項目查證後排除：Yogonet 10/21、BusinessWorld 10/19、BusinessMirror 10/19-20等合法平台辨識App報導均屬既有20261020-001；GGRAsia 10/21 PAGCOR捐贈16輛病患運送車屬企業社會責任新聞；IAG 10/21 Hann Reserve Junior PGA賽事屬企業新聞；Coins.ph／DCPay相關報導（PPMI Advisory No. 2026-0929-029、MB Resolution No. 839）均為10/14-15內容，屬既有20261015-001；PNA「Pagcor imposes stricter online gambling regulations」頁面無法讀取、經查為2026年2月舊聞；BI/NBI/CIDG本期未見新POGO突襲；AGB菲律賓頁面快取僅更新至10/7、RSS受robots限制
 // 2026-10-21 輕量掃描（涵蓋10/20-10/21）：本次無新增卡片。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC/DOLE/BSP/PNP-NBI-CICC/Senate-House/Supreme Court及AGB/GGRAsia/IAG(asgam.com)/Inquirer/Philstar/Manila Times/BusinessWorld/BusinessMirror/PNA等來源；候選項目查證後排除：GGRAsia 10/20、BusinessMirror 10/20、Manila Times 10/20、BusinessWorld 10/19、Journal News等PAGCOR合法平台辨識App 12月上線報導均屬既有20261020-001；GGRAsia 10/16 Interblock「Battle for Earth」獲PAGCOR產品核准屬廠商產品新聞、非法規；IAG 10/21 Hann Reserve高爾夫賽事、AGB/IAG 10/19 PAGCOR捐贈救護車、PhilWeb旗下JKS Tech與MegaWin合作屬企業新聞；BI 10/14「320名外籍人士」、NBI 10/12遣返101人為掃描範圍前之既有執法動態；e-sabong相關搜尋結果均為2025/2026年2月舊聞
