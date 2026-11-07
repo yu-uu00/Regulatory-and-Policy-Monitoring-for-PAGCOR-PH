@@ -198,6 +198,29 @@ const KEYWORDS_DEFAULT = ["PIGO","DEGL","Gaming Affiliates","AMLC","PAGCOR licen
 const DATA = {
   "2026-11": [
     {
+      id:"20261107-001",date_added:"2026-11-07",month:"2026-11",category:"enforcement",
+      title_zh:"BI包機遣返115名中國籍POGO被捕人員（三寶顏西布加62人、奎松市Cubao 53人）",
+      title_en:"BI Deports 115 Chinese Nationals Arrested in POGO Crackdown",
+      doc_number:"BI Board of Commissioners 簡易遣返令（summary deportation orders，報導未載文件編號）；包機航班CZ5308",
+      issuing_authority:"Bureau of Immigration（BI）",doc_type:"Deportation / Enforcement Action",
+      summary:"BI於11/6以China Southern包機（CZ5308）自NAIA第三航廈遣返115名中國籍人士，含10月三寶顏西布加突襲62人、奎松市Cubao突襲53人；依BI委員會簡易遣返令執行，Viado局長稱將持續打擊非法POGO。",
+      key_changes:[
+        "10月兩起突襲案（三寶顏西布加20261006-001、Cubao）後續：首批115人完成遣返，其中三寶顏西布加62人、Cubao 53人",
+        "依BI Board of Commissioners核發之簡易遣返令執行；報導未載遣返令編號與黑名單處置細節",
+        "原突襲共逮捕三寶顏西布加244名、Cubao 76名外籍人士，尚有其餘人員待處理"
+      ],
+      impact:"顯示Anti-POGO Act（RA 12312）架構下「突襲→簡易遣返」流程已常態化、速度約一個月；外籍人員涉入未經許可的博彩相關營運，面臨快速遣返與入境黑名單風險。對持牌業者無直接合規變更，但外籍員工的簽證與工作許可合規要求持續趨嚴。",
+      suggested_action:"1. 確認在菲外籍員工9G簽證與AEP文件完整、雇主與營運許可可清楚證明  2. 追蹤其餘被捕人員遣返與BI黑名單處置  3. 目前屬執法動態，暫無直接合規行動",
+      impact_areas:["enforcement","foreign_workers"],impact_level:"low",urgency:"in_force_new",
+      effective_date:"2026-11-06（遣返執行日）",days_to_effective:null,
+      badges:["low_impact","enforcement","in_force"],confidence:"mainstream_media",
+      sources:[
+        {name:"Daily Tribune — 115 Chinese deported in POGO crackdown（2026-11-06）",url:"https://tribune.net.ph/2026/11/06/115-chinese-deported-in-pogo-crackdown",type:"news",fetched_at:"2026-11-07T09:00:00+08:00"}
+      ],
+      original_quote:{text:"The Bureau of Immigration (BI) deported 115 Chinese nationals arrested during separate operations against suspected illegal Philippine offshore gaming operators (POGOs) in Zamboanga Sibugay and Quezon City last month. ... The deportation followed the issuance of summary deportation orders by the BI Board of Commissioners.",section:"Daily Tribune（2026-11-06）",lang:"en"},
+      keywords_hit:["POGO"],heat_score:58,captured_at:"2026-11-07T09:00:00+08:00"
+    },
+    {
       id:"20261106-001",date_added:"2026-11-06",month:"2026-11",category:"enforcement",
       title_zh:"NBI傳喚三寶顏西布加Siay、Alicia地方官員，追究POGO據點地方責任（subpoena）",
       title_en:"NBI Subpoenas Zamboanga Sibugay Officials over POGO Hubs",
@@ -2721,8 +2744,9 @@ const ACTIVE_LAWS = [
     {title_zh:"✅ 最高法院POGO資產民事沒收規則（已生效，2026-08-24 起）",title_en:"SC Rule on the Civil Forfeiture of POGO-Related Assets (A.M. No. 25-11-29-SC, Effective Aug 24)",effective_date:"2026-08-24（已生效）",cited_card:"20260812-001",areas:["enforcement","corporate_structure"]}
   ]}
 ];
-const TODAY = "2026-11-06";
+const TODAY = "2026-11-07";
 const CURRENT_MONTH = "2026-11";
+// 2026-11-07 輕量掃描（涵蓋11/06-11/07）：新增1張卡片（BI包機遣返115名中國籍POGO被捕人員，Daily Tribune 11/06，20261107-001）。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC/DOLE/BSP/PNP-NBI-PAOCC/Senate-House/Supreme Court及AGB/GGRAsia/IAG(asgam.com)/Inquirer/Rappler/Manila Bulletin/BusinessWorld/Tribune/PNA等來源；BusinessWorld 11/05「CoA says PAGCOR-linked sites took bets from users outside Philippines」原文及Magzter轉載均無法讀取、無其他來源可核實，待確認（abogado.com.ph 2026-01-19之COA 2024審計報導為舊聞）；PAGCOR 9M財報後續屬既有20261030-001；AMLC偽裝小商戶賭場、參院線上博彩法案搜尋結果均為舊聞；未發現11/06-11/07新的PAGCOR/AMLC/BIR/SEC/BSP博彩相關文件或議會動態
 // 2026-11-06 輕量掃描（涵蓋11/05-11/06）：新增1張卡片（NBI傳喚三寶顏西布加Siay/Alicia地方官員追究POGO據點責任，Daily Tribune 11/05，20261106-001）。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC-CICC/DOLE/BSP/PNP-NBI-PAOCC/Senate-House/Supreme Court及AGB/GGRAsia/IAG(asgam.com)/Inquirer/Rappler/Manila Bulletin/BusinessWorld/BusinessMirror/Tribune/PNA等來源；Politiko同事件報導robots限制無法讀取，改以Tribune原文核實；候選項目查證後排除：Tribune 11/02 Antipolo非法鬥雞突襲13人屬地方治安；PAGCOR 9M財報後續屬既有20261030-001；BSP線上博彩支付管制、參院線上博彩法案、CICC/PAOCC搜尋結果均為舊聞；未發現11/05-11/06新的PAGCOR/AMLC/BIR/SEC/BSP/BI博彩相關文件或議會動態
 // 2026-11-05 輕量掃描（涵蓋11/04-11/05）：本次無新增卡片。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC-CICC/DOLE/BSP/PNP-NBI-PAOCC/Senate-House/Supreme Court及AGB/GGRAsia/IAG(asgam.com)/Inquirer/Rappler/Manila Bulletin/Manila Times/BusinessWorld/BusinessMirror/PNA等來源；候選項目查證後排除：BusinessWorld 11/03「AMLC vows to tackle illegal casinos posing as small businesses」原文無法讀取、無其他來源可核實，研判延續既有20260918-001（BSP關閉8,000+偽裝商戶帳戶）脈絡，待確認是否有AMLC新文件；Inquirer「DICT: E-sabong still around despite ban」經查為2025-08-28舊聞；Inquirer「Pagcor upgrades Casino Filipino properties ahead of privatization」研判為2023舊聞；Manila Times 11/04 E-Game Ventures股東會通知屬企業公告；BI/PNP/PAOCC搜尋結果均為既有突襲（三寶顏西布加、Cubao、伊利甘）；未發現11/04-11/05新的PAGCOR/BIR/SEC/BSP/BI博彩相關文件、議會動態或執法行動
 // 2026-11-04 輕量掃描（涵蓋11/03-11/04）：本次無新增卡片。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC-CICC/DOLE/BSP/PNP-NBI-PAOCC/Senate-House/Supreme Court及AGB/GGRAsia/IAG(asgam.com)/Inquirer/Rappler/Manila Bulletin/BusinessWorld/PNA等來源；候選項目查證後排除：Rappler「Pagcor revenues plunge 23% in Q3」、casinobeats 11/03、GGRAsia 9M e-gaming drag報導均屬既有20261030-001；AGB 10/31 IEC LaVie自營線上平台屬既有20261102-001；BI「4 Chinese nationals anti-POGO cyber fraud raid」為9月阿拉邦既有卡片；CICC標記12個Facebook帳號為2026-08舊聞；Inquirer Plus「Pagcor nears endgame in casino privatization」日期無法確認、內容研判屬既有20261013-001脈絡；e-sabong、議會線上博彩法案搜尋結果均為舊聞；未發現11/03-11/04新的AMLC/BIR/SEC/BSP/BI博彩相關文件、議會動態或執法行動
