@@ -198,6 +198,31 @@ const KEYWORDS_DEFAULT = ["PIGO","DEGL","Gaming Affiliates","AMLC","PAGCOR licen
 const DATA = {
   "2026-11": [
     {
+      id:"20261109-001",date_added:"2026-11-09",month:"2026-11",category:"signal",
+      title_zh:"PAGCOR公布Q3全產業GGR年減11.4%至837.2億披索，電子博彩跌22.9%",
+      title_en:"Philippine Gaming Revenue Falls 11.4% to PHP83.72 Billion in Q3 as E-Gaming Slides 23%",
+      doc_number:"PAGCOR 2026年Q3（7-9月）全產業GGR數據（2026-11-06週五發布，報導未載文件編號）",
+      issuing_authority:"PAGCOR",doc_type:"Official Quarterly Industry GGR Disclosure",
+      summary:"PAGCOR公布2026年第3季全產業GGR為PHP837.2億，較去年同期PHP945.1億年減11.41%；電子博彩年減22.86%至PHP352.8億，貢獻約104.5億披索跌幅，持牌商業賭場僅微跌0.4%。",
+      key_changes:[
+        "Q3全產業GGR PHP837.2億，年減11.41%（約少107.9億披索）；跌幅較Q2的-20.33%（20260811-001）收斂",
+        "電子博彩（e-games／e-bingo／bingo）PHP352.8億，年減22.86%（去年同期457.3億），占全國GGR約42.1%，為主要拖累",
+        "持牌商業賭場（含Entertainment City綜合度假村）PHP453.8億，年減0.40%，占54.2%；PAGCOR自營Casino Filipino PHP30.3億，年減4.81%",
+        "PAGCOR維持2026全年GGR至少3,500億披索之預估"
+      ],
+      impact:"官方季度數據確認電子博彩板塊在e-Wallet斷鏈與監理收緊後持續萎縮，但跌幅自Q2收斂；實體持牌賭場大致持平，線上與實體分化延續。與PAGCOR自身9M財報（20261030-001）互為印證，為評估菲律賓線上博彩市場規模與全年展望的最新官方基準。",
+      suggested_action:"1. 以Q3官方板塊數字更新菲律賓電子博彩市場規模模型與全年預估（全年≥3,500億披索）  2. 觀察Q4電子博彩跌幅是否持續收斂，作為線上業務投入時點判斷  3. 留意PAGCOR是否以營收下滑為由調整牌照費、MGF或稅費結構",
+      impact_areas:["licensing","taxation"],impact_level:"medium",urgency:"historical",
+      effective_date:"2026-11-06（數據發布日）",days_to_effective:null,
+      badges:["medium_impact"],confidence:"industry_media",
+      sources:[
+        {name:"AGB — Philippine gaming revenue falls 11.4% to PHP83.72 billion in Q3 as e-gaming slides 23%（2026-11-07）",url:"https://agbrief.com/news/philippines/07/11/2026/philippine-gaming-revenue-falls-11-4-to-php83-72-billion-in-q3-as-e-gaming-slides-23/",type:"news",fetched_at:"2026-11-09T09:00:00+08:00"},
+        {name:"SCCG — Philippine Q3 2026 gaming revenue falls 11.4 percent to PHP83.72 billion（2026-11-06）",url:"https://sccgmanagement.com/sccg-articles/2026/11/06/philippine-q3-2026-gaming-revenue-falls-11-4-percent-to-php83-72-billion-with-electronic-gaming-down-23-percent/",type:"analysis",fetched_at:"2026-11-09T09:00:00+08:00"}
+      ],
+      original_quote:{text:"Gross gaming revenue in the Philippines dropped 11.41% year on year to PHP83.72 billion in the third quarter of 2026 ... Industry GGR stood at PHP94.51 billion in the same quarter of 2025",section:"AGB（2026-11-07），引述PAGCOR Q3 GGR數據",lang:"en"},
+      keywords_hit:[],heat_score:52,captured_at:"2026-11-09T09:00:00+08:00"
+    },
+    {
       id:"20261107-001",date_added:"2026-11-07",month:"2026-11",category:"enforcement",
       title_zh:"BI包機遣返115名中國籍POGO被捕人員（三寶顏西布加62人、奎松市Cubao 53人）",
       title_en:"BI Deports 115 Chinese Nationals Arrested in POGO Crackdown",
@@ -2744,8 +2769,9 @@ const ACTIVE_LAWS = [
     {title_zh:"✅ 最高法院POGO資產民事沒收規則（已生效，2026-08-24 起）",title_en:"SC Rule on the Civil Forfeiture of POGO-Related Assets (A.M. No. 25-11-29-SC, Effective Aug 24)",effective_date:"2026-08-24（已生效）",cited_card:"20260812-001",areas:["enforcement","corporate_structure"]}
   ]}
 ];
-const TODAY = "2026-11-07";
+const TODAY = "2026-11-09";
 const CURRENT_MONTH = "2026-11";
+// 2026-11-09 輕量掃描（涵蓋11/07-11/09，補掃11/08漏跑）：新增1張卡片（PAGCOR公布Q3全產業GGR年減11.41%至PHP837.2億、電子博彩-22.86%，AGB 11/07、SCCG 11/06，20261109-001）。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC-CICC/DOLE/BSP/PNP-NBI-PAOCC/Senate-House/Supreme Court及AGB/GGRAsia/IAG(asgam.com)/Inquirer/Rappler/Manila Bulletin/BusinessWorld/Tribune/PNA等來源；PAGCOR官方Q3 GGR新聞稿原文未取得，以AGB/SCCG核實數字（GMA「PH gaming revenues down in Q3」經查為2025-11-11舊聞）；候選項目查證後排除：BusinessWorld 11/05 CoA稱PAGCOR相關網站接受境外投注，原文仍無法讀取、待確認；Philstar/Inquirer 11/06 NBI-PCSO突襲Caloocan彩券站經營非法數字遊戲屬地方治安；BI遣返115人屬既有20261107-001；未發現11/07-11/09新的AMLC/BIR/SEC/BSP/BI博彩相關文件、議會動態或執法行動
 // 2026-11-07 輕量掃描（涵蓋11/06-11/07）：新增1張卡片（BI包機遣返115名中國籍POGO被捕人員，Daily Tribune 11/06，20261107-001）。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC/DOLE/BSP/PNP-NBI-PAOCC/Senate-House/Supreme Court及AGB/GGRAsia/IAG(asgam.com)/Inquirer/Rappler/Manila Bulletin/BusinessWorld/Tribune/PNA等來源；BusinessWorld 11/05「CoA says PAGCOR-linked sites took bets from users outside Philippines」原文及Magzter轉載均無法讀取、無其他來源可核實，待確認（abogado.com.ph 2026-01-19之COA 2024審計報導為舊聞）；PAGCOR 9M財報後續屬既有20261030-001；AMLC偽裝小商戶賭場、參院線上博彩法案搜尋結果均為舊聞；未發現11/06-11/07新的PAGCOR/AMLC/BIR/SEC/BSP博彩相關文件或議會動態
 // 2026-11-06 輕量掃描（涵蓋11/05-11/06）：新增1張卡片（NBI傳喚三寶顏西布加Siay/Alicia地方官員追究POGO據點責任，Daily Tribune 11/05，20261106-001）。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC-CICC/DOLE/BSP/PNP-NBI-PAOCC/Senate-House/Supreme Court及AGB/GGRAsia/IAG(asgam.com)/Inquirer/Rappler/Manila Bulletin/BusinessWorld/BusinessMirror/Tribune/PNA等來源；Politiko同事件報導robots限制無法讀取，改以Tribune原文核實；候選項目查證後排除：Tribune 11/02 Antipolo非法鬥雞突襲13人屬地方治安；PAGCOR 9M財報後續屬既有20261030-001；BSP線上博彩支付管制、參院線上博彩法案、CICC/PAOCC搜尋結果均為舊聞；未發現11/05-11/06新的PAGCOR/AMLC/BIR/SEC/BSP/BI博彩相關文件或議會動態
 // 2026-11-05 輕量掃描（涵蓋11/04-11/05）：本次無新增卡片。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC-CICC/DOLE/BSP/PNP-NBI-PAOCC/Senate-House/Supreme Court及AGB/GGRAsia/IAG(asgam.com)/Inquirer/Rappler/Manila Bulletin/Manila Times/BusinessWorld/BusinessMirror/PNA等來源；候選項目查證後排除：BusinessWorld 11/03「AMLC vows to tackle illegal casinos posing as small businesses」原文無法讀取、無其他來源可核實，研判延續既有20260918-001（BSP關閉8,000+偽裝商戶帳戶）脈絡，待確認是否有AMLC新文件；Inquirer「DICT: E-sabong still around despite ban」經查為2025-08-28舊聞；Inquirer「Pagcor upgrades Casino Filipino properties ahead of privatization」研判為2023舊聞；Manila Times 11/04 E-Game Ventures股東會通知屬企業公告；BI/PNP/PAOCC搜尋結果均為既有突襲（三寶顏西布加、Cubao、伊利甘）；未發現11/04-11/05新的PAGCOR/BIR/SEC/BSP/BI博彩相關文件、議會動態或執法行動
