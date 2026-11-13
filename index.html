@@ -198,6 +198,54 @@ const KEYWORDS_DEFAULT = ["PIGO","DEGL","Gaming Affiliates","AMLC","PAGCOR licen
 const DATA = {
   "2026-11": [
     {
+      id:"20261113-001",date_added:"2026-11-13",month:"2026-11",category:"signal",
+      title_zh:"NPC證實收到PAGCOR等10個政府機關個資外洩通報（data breach）",
+      title_en:"NPC Confirms Data Breach Reports from 10 Gov't Agencies (incl. PAGCOR)",
+      doc_number:"NPC Circular No. 16-03（Personal Data Breach Management）；RA 10173（Data Privacy Act of 2012）§21",
+      issuing_authority:"National Privacy Commission（NPC）",doc_type:"Regulator Statement / Press Report",
+      summary:"NPC於11/10聲明，已收到10個政府機關依NPC Circular No. 16-03提交的個資外洩通報，名單包括PAGCOR、BIR、SEC、DICT、DOJ等；未揭露受影響人數、資料類型或各事件是否相關。",
+      key_changes:[
+        "PAGCOR列入NPC公布的10個個資外洩通報機關之一（另含BIR、SEC、DICT、PCGG、DOLE-BLE、DOJ-OADR、PCG、DTI、DOST-Phivolcs）",
+        "NPC強調外包處理個資時機關仍負責任；通報僅為Data Privacy Act義務之一部分",
+        "同期有業界媒體報導PAGCOR就疑似「限制入場人員名單」（NDRP）外洩向公眾示警，原文未能讀取、待確認是否為同一事件",
+        "NPC聲明日2026-11-10，本次補錄"
+      ],
+      impact:"PAGCOR持有持牌業者、從業人員及NDRP（禁入／自我排除）名單等敏感資料；若外洩事件涉及業者申請文件或玩家資料，可能衍生詐騙、KYC資料遭冒用及後續資安合規要求。現階段細節未公開，屬觀察訊號。",
+      suggested_action:"1. 若曾向PAGCOR提交牌照／認證文件，留意可疑釣魚或冒名聯繫  2. 追蹤PAGCOR或NPC是否公布外洩範圍及是否對持牌業者提出新資安要求  3. 檢視自身平台個資保護與NPC通報流程",
+      impact_areas:["data_privacy"],impact_level:"low",urgency:"in_force_new",
+      effective_date:"2026-11-10（NPC聲明日）",days_to_effective:null,
+      badges:["low_impact"],confidence:"industry_media",
+      sources:[
+        {name:"Newsbytes.PH — NPC confirms data breach reports from 10 gov't agencies（2026-11-10）",url:"https://newsbytes.ph/2026/11/10/npc-confirms-data-breach-reports-from-10-govt-agencies/",type:"news",fetched_at:"2026-11-13T09:00:00+08:00"}
+      ],
+      original_quote:{text:"The submission of personal data breach notifications is a regulatory requirement under NPC Circular No. 16-03 ... Breach notification is only one part of an agency's responsibility under the Data Privacy Act.",section:"NPC副隱私專員兼發言人Jose S. Belarmino II（Newsbytes.PH 2026-11-10）",lang:"en"},
+      keywords_hit:[],heat_score:57,captured_at:"2026-11-13T09:00:00+08:00"
+    },
+    {
+      id:"20261113-002",date_added:"2026-11-13",month:"2026-11",category:"signal",
+      title_zh:"參院聽證：Hontiveros促DFA阻止游擊式POGO濫用免簽入境（visa-free）",
+      title_en:"Hontiveros Presses DFA to Stop Guerrilla POGO Abuse of Visa-Free Entry",
+      doc_number:"無文件編號（參議院司法與人權小組委員會聽證，Journal News 2026-11-07）",
+      issuing_authority:"Senate of the Philippines（Sen. Risa Hontiveros）／DFA／NBI",doc_type:"Senate Hearing / Press Report",
+      summary:"參院司法與人權小組委員會聽證後，Hontiveros要求DFA監控並阻止涉游擊式POGO與詐騙據點外國人濫用免簽；DFA坦承尚未監控中國公民14天免簽濫用，NBI稱三寶顏西布加據點291人中約87人以免簽入境。",
+      key_changes:[
+        "DFA承認目前未監控中國公民14天免簽特權之濫用；該特權自1月起實施一年、至2027-01-15到期",
+        "NBI局長Matibag：三寶顏西布加被突襲POGO據點291人中約87人以免簽入境",
+        "Hontiveros點名Mary Ann Maslog涉新游擊式POGO，NBI稱其已羈押於CIW、待查證",
+        "聽證報導日11/07；前次（11/12）因日期無法確認列為待確認，本次核實後補錄"
+      ],
+      impact:"免簽政策2027-01-15到期前的檢討方向，將影響中國籍人員赴菲入境便利度；若收緊，合法博彩業者的外籍員工、商務訪客與玩家入境亦可能受波及。屬政策風聲、尚無正式提案。",
+      suggested_action:"1. 盤點菲律賓業務依賴免簽入境的中國籍人員與訪客  2. 追蹤DFA／BI對免簽政策的檢討結果及2027-01-15到期後安排  3. 確保外籍員工均持有正式工作簽證（9G／SWP）",
+      impact_areas:["foreign_workers","enforcement","cross_border"],impact_level:"medium",urgency:"draft",
+      effective_date:"未定（政策檢討中；免簽特權至2027-01-15）",days_to_effective:null,
+      badges:["medium_impact","draft"],confidence:"mainstream_media",
+      sources:[
+        {name:"Journal News Online — Hontiveros presses DFA to stop guerrilla POGO abuse of visa-free entry（2026-11-07）",url:"https://journalnews.com.ph/hontiveros-presses-dfa-to-stop-guerrilla-pogo-abuse-of-visa-free-entry",type:"news",fetched_at:"2026-11-13T09:00:00+08:00"}
+      ],
+      original_quote:{text:"Guerrilla POGOs are illegal operations that continue despite the ban on Philippine Offshore Gaming Operators. ... A ban is only as good as its implementation",section:"Journal News（2026-11-07），引述Sen. Risa Hontiveros",lang:"en"},
+      keywords_hit:[],heat_score:55,captured_at:"2026-11-13T09:00:00+08:00"
+    },
+    {
       id:"20261110-001",date_added:"2026-11-10",month:"2026-11",category:"enforcement",
       title_zh:"PNP持搜索令突襲布拉干Pandi跨國線上鬥雞（online sabong）據點，21人將被起訴（raid）",
       title_en:"PNP Uncovers Suspected International Online Sabong Operation in Bulacan; 21 Suspects Face Charges",
@@ -2817,8 +2865,9 @@ const ACTIVE_LAWS = [
     {title_zh:"✅ 最高法院POGO資產民事沒收規則（已生效，2026-08-24 起）",title_en:"SC Rule on the Civil Forfeiture of POGO-Related Assets (A.M. No. 25-11-29-SC, Effective Aug 24)",effective_date:"2026-08-24（已生效）",cited_card:"20260812-001",areas:["enforcement","corporate_structure"]}
   ]}
 ];
-const TODAY = "2026-11-12";
+const TODAY = "2026-11-13";
 const CURRENT_MONTH = "2026-11";
+// 2026-11-13 輕量掃描（涵蓋11/12-11/13，另補錄前次漏收2則）：新增2張卡片（NPC證實收到PAGCOR等10機關個資外洩通報、NPC Circular No. 16-03，Newsbytes 11/10，20261113-001；參院聽證Hontiveros促DFA阻止游擊式POGO濫用免簽、NBI稱三寶顏西布加291人中87人免簽入境，Journal News 11/07，20261113-002）。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC-CICC/DOLE/BSP/PNP-NBI-CIDG-PAOCC/CEZA-APECO-AFAB/Senate-House/Supreme Court及AGB/GGRAsia/IAG(asgam.com)/Inquirer/Rappler/Manila Bulletin/Manila Times/BusinessWorld/PNA等來源；候選項目查證後排除：iGaming Expert「PAGCOR warns public after alleged restricted persons leak」及Daily Dark Web X貼文（疑似NDRP再度外洩）原文均無法讀取、待確認；GMA 11/07 BI逮捕台籍詐騙及韓籍遠端百家樂junket通緝犯屬外籍通緝犯遣返個案；SCMP「Philippines thought Pogos were gone」屬專題且無法讀取；DICT研議封鎖Telegram為2026-02舊聞；BusinessWorld 11/05 CoA稱PAGCOR相關網站接受境外投注，原文仍未取得、待確認；未發現11/12-11/13新的PAGCOR/AMLC/BIR/SEC/BSP/BI博彩相關文件或執法行動
 // 2026-11-12 輕量掃描（涵蓋11/11-11/12）：本次無新增卡片。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC-CICC/DOLE/BSP/PNP-NBI-CIDG-PAOCC/CEZA-APECO-AFAB/Senate-House/Supreme Court及AGB/GGRAsia/IAG(asgam.com)/Inquirer/Rappler/Manila Bulletin/Manila Times/BusinessWorld/Tribune/PNA等來源；候選項目查證後排除：Manila Times 11/08「Illegal online cockfighting hub raided in Bulacan」屬既有20261110-001；BI遣返115人報導屬既有20261107-001；Sigma IEC線上賭場11月上線屬既有20261102-001；Journal News「Hontiveros presses DFA to stop guerrilla POGO abuse of visa-free entry」無法確認發布日期、無提案編號，待確認；AseanGaming 11/11 Games Global產品路線圖、Manila Times 11/11 BIO-key合約屬企業新聞；BusinessWorld 11/05 CoA稱PAGCOR相關網站接受境外投注，原文仍未取得、待確認；未發現11/11-11/12新的PAGCOR/AMLC/BIR/SEC/BSP/BI博彩相關文件、議會動態或執法行動
 // 2026-11-11 輕量掃描（涵蓋11/10-11/11）：本次無新增卡片。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC-CICC/DOLE/BSP/PNP-NBI-CIDG-PAOCC/CEZA-APECO-AFAB/Senate-House/Supreme Court及AGB/GGRAsia/IAG(asgam.com)/Inquirer/Rappler/Manila Bulletin/BusinessWorld/BusinessMirror/Philstar/Tribune/PNA等來源；候選項目查證後排除：Tribune 11/07「Underground e-sabong hub busted」、SunStar/DZRH/Journal/Abante布拉干Pandi線上鬥雞報導均屬既有20261110-001；Aseangaming/focusgn/iGamingToday線上博彩excise tax報導屬既有20261110-002；focusgn Leyte e-sabong突襲為2026-06舊聞；Tribune 11/04 Pasay包裹詐騙據點救出166名外籍人士屬詐騙、未見博彩關聯；BusinessMirror/Abante 11/10 Myanmar詐騙據點受困菲人屬海外詐騙非博彩監理；Manila Bulletin「SC justice laments unequal treatment of gambling violators」為2025-07舊聞；BusinessWorld 11/05 CoA稱PAGCOR相關網站接受境外投注，原文仍無法讀取（4xx）、待確認；未發現11/10-11/11新的PAGCOR/AMLC/BIR/SEC/BSP/BI博彩相關文件、議會動態或執法行動
 // 2026-11-10 輕量掃描（涵蓋11/09-11/10，另補錄前次漏收2則）：新增2張卡片（PNP持Search Warrant No. 154-M-2026突襲布拉干Pandi跨國線上鬥雞據點、21人將起訴，Daily Tribune 11/07，20261110-001；DOF副部長Adriano證實研議線上博彩excise tax，Philstar 11/03，20261110-002）。掃描PAGCOR/AMLC/BIR/BI/SEC/DOF/DOJ/DICT-NPC-CICC/DOLE/BSP/PNP-NBI-PAOCC/CEZA-APECO-AFAB/Senate-House/Supreme Court及AGB/GGRAsia/IAG(asgam.com)/Inquirer/Rappler/Manila Bulletin/BusinessWorld/Philstar/Tribune/PNA等來源；候選項目查證後排除：asgam 11/07 Q3全產業GGR屬既有20261109-001；The Star 11/07中國感謝遣返115人屬既有20261107-001；BusinessWorld 11/05 CoA稱PAGCOR相關網站接受境外投注，原文仍無法讀取、待確認；未發現11/09-11/10新的PAGCOR/AMLC/BIR/SEC/BSP/BI博彩相關文件、議會動態或執法行動
